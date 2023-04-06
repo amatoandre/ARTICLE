@@ -34,33 +34,33 @@
 
 \begin{document}
 
-\chapter{Studio Numerico}
+\chapter*{Numerical Study}
 
 \section{Kuramoto-Shinomoto-Sakaguchi MV-SDE}
-Scriviamo, in primis, la MV-SDE relativa al modello che andremo ad analizzare, ovvero il modello di Kuramoto-Shinomoto-Sakaguchi:
+Let us first write the MV-SDE of the model we are going to analyse, namely the Kuramoto-Shinomoto-Sakaguchi model:
 \[
 dX_t = \left( {\rm I\!E}[\sin(X_t)] \cos(X_t) - {\rm I\!E}[\cos(X_t)]\sin(X_t) \right) dt + \sigma dW_t , \ \ \ X_0=x_0, 
 \]
-dove nel nostro caso $\sigma = 0.5$ e $x_0 = 0.5$. Da questa equazione differenziale si evince facilmente che:
+where, in our case, $\sigma = 0.5$ and $x_0 = 0.5$. From this differential equation it is easily seen that:
 \begin{itemize}
 \item K = 3, d = 1 e q = 1,
 \item $\varphi(x)=(1, \sin x, \cos x)$, 
 \item $\alpha(t,x)=(0, \cos x, -\sin x)^T$, 
 \item $\beta(t,x)=(\sigma, 0, 0)^T$.
 \end{itemize}
-Il nostro studio, i risultati numerici e le osservazioni che emergono sono ottenuti dal lavoro di due macro funzioni, entrambe volte al calcolo approssimato dei valori di ${\rm I\!E}[\sin(X_t)]$ e ${\rm I\!E}[\cos(X_t)]$. 
+In our numerical study, the results and the observations are obtained from the work of two macro functions, both aimed at the approximate calculation of the values of ${\rm I\!E}[\sin(X_t)]$ and ${\rm I\!E}[\cos(X_t)]$.
 \begin{itemize}
-\item[-] La prima, che usiamo per ottenere la soluzione che svolgerà per noi il ruolo di benchmark, è l'ormai noto metodo Eulero - Monte Carlo. Esso consiste nell'approssimare i due valori attesi in questione mediante una media diretta di $M_1 = 10^6$ simulazioni di processi $(X_t)_{t=0, \cdots T}$ ottenuti dividendo l'intervallo $[0,T]$ in $N_1$ step temporali e applicando in ciascuno di essi il metodo di Eulero. Nello specifico il Metodo di Eulero calcola gli $N+1$ valori di un processo discretizzato ottenendo, ad ogni passo, il valore al tempo $t$ dal valore del processo al tempo precedente e dal valore dello step temporale $h$, secondo la formula:
+\item[-] The first one, which we use to obtain the solution that will play the role of benchmark, is the well-known Euler - Monte Carlo method. It consists in approximating the two expected values with a direct average of $M_1 = 10^6$ simulations of processes $(X_t)_{t=0, \cdots T}$ obtained by dividing the interval $[0,T]$ into $N_1$ time steps and applying Euler's method to each of them. Specifically, Euler's Method calculates the $N+1$ values of a discretized process by obtaining, at each step, the value at time $t$ from the value of the process at the previous time and the value of the time step $h$, according to the formula:
 \[
-X_{t+1} = X_t + \mathrm{drift}(t) \cdot h + \mathrm{diffusione}(t) \cdot \sqrt{h} \cdot W, 
+X_{t+1} = X_t + \mathrm{drift}(t) \cdot h + \mathrm{diffusion}(t) \cdot \sqrt{h} \cdot W, 
 \]
-dove $W$ è il valore della realizzazione di una Normale Standard.
-Nel nostro caso gli step temporali sono tutti equivalenti in quanto suddividiamo l'intervallo $[0,T]$ in punti equispaziati. Mettiamo in evidenza che la funzione in questione è strutturata in modo da poter essere applicata anche alla categoria di SDEs di McKean-Vlasov, per le quali il metodo di Eulero al passo $t+1$ richiede che siano noti, all'interno delle parti di drift e diffusione, i valori attesi cercati, al tempo $t$. Per ottenerli sfruttiamo anche in questo caso una media sulle $M_1$ simulazioni delle realizzazioni dei processi al tempo $t$. 
-\item[-] La seconda è il metodo di Discesa Stocastica del Gradiente descritto nel capitolo precedente. Questa produrrà i polinomi $(\mathcal{L}(a))_1(t)$ e $(\mathcal{L}(a))_2(t)$ che saranno rispettivamente le  approssimazioni di ${\rm I\!E}[\sin(X_t)]$ di ${\rm I\!E}[\cos(X_t)]$, risolvendo il nostro problema di ottimizzazione. Per quanto concerne la scelta dello spazio dei polinomi, i due output sono calcolati nella base di quelli ortogonali di Lagrange. La dimensione $n$ dello spazio dei polinomi verrà fatta variare, mentre ciascun elemento della base è della forma: 
+where $W$ is the sample of a Standard Normal. In our case the time steps are all equivalent since we divide the interval $[0,T]$ into equispaced points. We observe that the function is structured in such a way that it can also be applied to McKean-Vlasov SDEs, for which Euler's method at step $t+1$ requires that the expected values sought, at time $t$, are known within the drift and diffusion parts. To obtain these we again use an average over the $M_1$ simulations of the realisations of the processes at time $t$.
+
+\item[-] The second one is the Stochastic Gradient Descent method. This returns us as output the polynomials $(\mathcal{L}(a))_1(t)$ and $(\mathcal{L}(a))_2(t)$ which will be the approximations of ${\rm I\!E}[\sin(X_t)]$ and ${\rm I\!E}[\cos(X_t)]$ respectively. As for the choice of the space of polynomials, the two outputs are calculated in the basis of orthogonal Lagrange polynomials. In the test we will change the dimension $n$ of the space of polynomial. Each element of the basis is of the form:
 \[
-g_i(t):=\prod_{j \leq n \ e  \ j\neq n} \left( \frac{t - t_j}{t_i - t_j} \right), \text{ con nodi di Chebyshev } \cfrac{T}{2} + \cfrac{T}{2} \cos \left( \cfrac{2k + 1}{2n +2} \pi \right).
+g_i(t):=\prod_{j \leq n \ and  \ j\neq n} \left( \frac{t - t_j}{t_i - t_j} \right), \text{ with Chebyshev knots } \cfrac{T}{2} + \cfrac{T}{2} \cos \left( \cfrac{2k + 1}{2n +2} \pi \right).
 \]
-Anche in questo caso sarà necessario ricorre agli $N$ step di Eulero per trovare la soluzione delle SDEs. Questa volta il metodo di Eulero per la simulazione di $Z(\xi , W)$ e di $\left( Z^a(\tilde{\xi} , \tilde{W}), \partial_{a_{h,j}} Z^a(\tilde{\xi} , \tilde{W}) \right)$ dovrà portare avanti 4 processi simultaneamente: $(X_t)_{t=0, \cdots T}$ e $(Z_t)_{t=0, \cdots T}$ monodimensionali e le due $(Y_t)^{(1,2)}_{t=0, \cdots T}$ $n+1$ dimensionali. Inoltre sarà necessario usare a ogni passo il valore ottenuto per il processo $X$ per poter calcolare le due $Y^{(1,2)}$. Notiamo che $X$ e $Z$ implementano lo step di Eulero al medesimo modo della funzione precedente, ma con due realizzazioni differenti del Browniano. In questo algoritmo semplificato le mappe $\textbf{h}$ e $ H $ sono prese rispettivamente come l'identità e la funzione nulla. Riprendendo i valori delle funzioni dei coefficienti per la MV-SDE relativa al modello di Kuramoto-Shninomoto-Sakaguchi si ottiene che nello specifico le equazioni diventano:
+Again, we will use to the $N$ Euler steps to find the solution of the SDEs. This time, Euler's method for simulating $Z(\xi , W)$ and $\left( Z^a(\tilde{\xi} , \tilde{W}), \partial_{a_{h,j}} Z^a(\tilde{\xi} , \tilde{W}) \right)$ will have to carry out 4 processes simultaneously: $(X_t)_{t=0, \cdots T}$ and $(Z_t)_{t=0, \cdots T}$ one-dimensional and the two $(Y_t)^{(1,2)}_{t=0, \cdots T}$ $n+1$ dimensional. Furthermore, it will be necessary to use at each step the value obtained for the process $X$ in order to calculate the two $Y^{(1,2)}$. We note that $X$ and $Z$ implement the Euler step in the same way as the previous function, but with two different samples of the Brownian. In this simplified algorithm the maps $\textbf{h}$ and $H$ are taken as the identity and the null function, respectively. By taking the values of the coefficient functions for the MV-SDE relative to the Kuramoto-Shninomoto-Sakaguchi model, we obtain that specifically the equations become:
 \[
 dZ_t = \left( (\mathcal{L}a)_1(t) \cos(Z_t) - (\mathcal{L}a)_2(t) \sin(Z_t) \right) dt + \sigma dW_t, 
 \]
@@ -70,7 +70,7 @@ dY^{j,1}_t = \left( g_j(t) \cos(Z_t) - Y^{j,1}_t \left( (\mathcal{L}a)_1(t)\sin(
 \[
 dY^{j,2}_t = \left( -g_j(t) \sin(Z_t) - Y^{j,2}_t \left( (\mathcal{L}a)_1(t)\sin(Z_t) + (\mathcal{L}a)_2(t)\cos(Z_t)\right) \right)dt, 
 \]
-con $Z_0 = X_0$, $Y^{j,1}_0 = 0 $ e $Y^{j,2}_0 = 0$ e per $j = 0, \cdots , n$. Questi processi sono necessari per calcolare la realizzazione del gradiente per la Discesa Stocastica, ovvero la variabile aleatoria $v$. Avendo suddiviso il tempo in $N$ step temporali e  approssimato l'integrale con una sommatoria la scrittura della $v$ della nostra funzione, componente per componente, è la seguente:
+with $Z_0 = X_0$, $Y^{j,1}_0 = 0$ and $Y^{j,2}_0 = 0$ and for $j = 0, \cdots , n$. These processes are necessary to calculate the realisation of the gradient for the Stochastic Descent, i.e. the random variable $v$. Having divided time into $N$ time steps and approximated the integral with a summation the writing of $v$, component by component, is as follows:
 \begin{align*}
 v_{j,1}&(a; W; \tilde{W}) = \\
 &2 h \sum_{t=0}^{N} \left[ \left( \sin(Z^a_t(W)) - (\mathcal{L}a)_1(t) \right) \cdot \left( \cos(Z^a_t(\tilde{W})) Y_t^{a;j,1}(\tilde{W}) - g_j(t) \right) \right.\\
@@ -81,40 +81,39 @@ v_{j,2}&(a; W; \tilde{W}) = \\
 &2 h \sum_{t=0}^{N} \left[ \left( \sin(Z^a_t(W)) - (\mathcal{L}a)_1(t) \right) \cdot \left( \cos(Z^a_t(\tilde{W})) Y_t^{a;j,2}(\tilde{W}) \right) \right.\\
 &\left.+ \left( \cos(Z^a_t(W)) - (\mathcal{L}a)_2(t) \right) \cdot \left( -\sin(Z^a_t(\tilde{W})) Y_t^{a;j,2}(\tilde{W}) - g_j(t) \right)\right],
 \end{align*}
-con $j = 0, \cdots , n$.
-Concludiamo mettendo in evidenza che prima di restituire il valore $v$, questa funzione fa una media di $M$ realizzazioni ottenute corrispondenti ad altrettante simulazioni indipendenti di moti Browniani. Se tale parametro è lasciato a 1 il metodo è un classico metodo SGD, ma se portato a $\infty$ porta a un metodo GD, ovvero di discesa deterministica. Questo strategia, chiamata Mini Batch, è al centro delle analisi numeriche che abbiamo eseguito. Infine, per quanto concerne la scelta dei $learing \ rates,$ necessari per il calcolo di $v$ ad ogni iterazione, scegliamo $\eta_m = \cfrac{r_0}{(m + 1)^\rho}$, basandoci anche sui risultati di \cite{fehrman2020convergence}, dove i coefficienti $r_0 \in (0, +\infty)$ e $\cfrac{1}{2} < \rho \leq 1$ sono stati fatti variare nel corso dello studio numerico. 
+with $j = 0, \cdots , n$. We conclude highlighting that, before returning the value $v$, this function averages $M$ realisations obtained corresponding to as many independent simulations of Brownian motions. If this parameter is 1, the method is a classical SGD method, but if taken to $\infty$ it leads to a GD method, i.e. deterministic descent. This strategy, called Mini Batch, is the core of the numerical analyses we have done. Finally, regarding the choice of \emph{learing  rates} necessary for the calculation of $v$ at each iteration, we choose $\eta_m = \cfrac{r_0}{(m + 1)^\rho}$, where the factors $r_0 \in (0, +\infty)$ and $\cfrac{1}{2} < \rho \leq 1$ will change in the tests.
 \end{itemize}
 
-\section{Tabelle e Grafici}
-Lo scopo della nostra analisi è quello di trovare il numero di iterazioni necessarie per portare a convergenza il metodo di Discesa del Gradiente. A tal proposito esplicitiamo il criterio d'arresto per l'iterazione di $a_m$: fissati $\gamma_{1,bench}$ e $\gamma_{2, bench}$ ottenuti dalla prima funzione, le iterazioni terminano quando
+\section{Tables and Graphs}
+The aim of our analysis is to find the number of iterations required for the Gradient Descent method to converge. We therefore explicate the stopping criterion for the iteration of $a_m$: fixed $\gamma_{1,bench}$ and $\gamma_{2, bench}$ obtained from the first function, the iterations stops when:
 \[ 
-\frac{\|\sum_{i=0}^n (a_1)_i g_i - \gamma_{1, bench} \|_{L_2}}{\| \gamma_{1, bench}\|_{L_2}} < 1\% \ \ \ \mbox{ e } \ \ \ \frac{\|\sum_{i=0}^n (a_2)_i g_i - \gamma_{2, bench} \|_{L_2}}{\| \gamma_{2, bench}\|_{L_2}} < 1\%.
+\frac{\|\sum_{i=0}^n (a_1)_i g_i - \gamma_{1, bench} \|_{L_2}}{\| \gamma_{1, bench}\|_{L_2}} < 1\% \ \ \ \mbox{ and } \ \ \ \frac{\|\sum_{i=0}^n (a_2)_i g_i - \gamma_{2, bench} \|_{L_2}}{\| \gamma_{2, bench}\|_{L_2}} < 1\%.
 \]
-Pertanto la seconda funzione, descritta nella sezione precedente, produrrà come output una soluzione avente errore relativo dell'$1 \% $, in norma $L_2$, rispetto alla soluzione benchmark. Per rendere più generali e corretti possibile tali risultati, ripetiamo lo stesso test al variare di: istante finale $ T = 0.5, 1, 2, 4$; dimensione dello spazio dei polinomi $ n = 3, 4, 5, 6 $; e valori dei parametri $\rho = 0.6, 0.7, 0.8, 0.9$ e $r_0 = 1, 5, 10$ dei \emph{learning rates}. Specifichiamo che, al fine di ottenere lo stesso ordine di errore nel metodo di Eulero e pertanto mantenere costante in tutti i test il parametro $h$, suddividiamo l'intervallo $[0,T]$ in $N_1 = 50, 100, 200, 400$ step, rispettivamente ai valori di $T$ appena elencati. In particolare ripetiamo per ciascuna casistica lo stesso test $10$ volte e riportato: i tempi di convergenza medi, una tabella che per ogni combinazione di $\rho$ e $r_0$ mostra il numero minore, massimo e medio di iterazioni di convergenza e i grafici delle soluzioni approssimate. I grafici che mostreremo saranno quelli relativi ai valori di $\rho$ e $r_0$ che nelle tabelle presentano minor numero di iterazioni medie, per ogni combinazione dei parametri $T$, $n$ e $M$. Il tutto è eseguito al variare del valore del Mini Batch $M = 1, 10, 10^2, 10^3, 10^4$ e del grado dei polinomi $n$. Raggruppiamo tali tabelle e grafici in sezioni in base al valore di $T$.
+Therefore, the second function, described in the previous section, will produce as output a solution with a relative error of $1 \%$, in norm $L_2$, with respect to the benchmark solution. In order to make these results as general and correct as possible, we repeat the same test by varying: final instant $T = 0.5, 1, 2, 4$; dimension of the space of polynomials $n = 3, 4, 5, 6$; and values of the parameters $\rho = 0.6, 0.7, 0.8, 0.9$ and $r_0 = 1, 5, 10$ of the \emph{learning rates}. We specify that, in order to obtain the same error order in Euler's method, we subdivide the interval $[0,T]$ into $N_1 = 50, 100, 200, 400$ steps, respectively at the values of $T$ just listed. In particular, we repeat for each case the same test $10$ times and show: the average convergence times, a table that for each combination of $\rho$ and $r_0$ shows the minimum, maximum and average number of convergence iterations and the graphs of the approximate solutions. The graphs we will show are those with the values of $\rho$ and $r_0$ which in the tables have the smallest number of average iterations, for each combination of the parameters $T$, $n$ and $M$. This is done by varying the value of the Mini Batch $M = 1, 10, 10^2, 10^3, 10^4$ and the degree of the polynomials $n$. We group these tables and graphs into sections according to the value of $T$.
 
 \begin{notabene}
-Quando nelle tabelle compaiono valori come "overflow" o $49999$ significano rispettivamente che durante l'esecuzione del programma è avvenuto un $overflow$, ovvero si è raggiunto il limite della capacità di storage del valore (quindi un numero troppo grande); mentre il secondo significa che l'algoritmo non è arrivato a convergenza entro le $50000$ iterazioni imposte come threshold.
+When values such as 'overflow' or $49999$ appear in the tables, they respectively mean that an $overflow$ occurred during the execution of the programme, i.e. the limit of the value storage capacity was reached (i.e. too large a number); while the second means that the algorithm did not reach convergence within the $50000$ iterations imposed as a threshold.
 \end{notabene}
 
 \begin{notabene}
-Per quanto concerne i primi tre valori di $M$, ovvero $M = 1, 10, 100$, il confronto col benchmark avviene ogni dieci iterazioni, così da contenere i tempi di esecuzione. Mentre per gli ultimi due casi, ovvero $M = 1000, 10000$, tale controllo avviene ogni step.
+For the first three values of $M$, i.e. $M = 1, 10, 100$, we check the solution with the benchmark every ten iterations in order to keep execution times down. While for the last two cases, i.e. $M = 1000, 10000$, this check takes place every step.
 \end{notabene}
 
 \begin{notabene}
-Specifichiamo che gli algoritmi sono stati scritti nel linguaggio di programmazione Python, nello specifico nell'applicazione web Jupyter Notebook per la creazione e la condivisione di documenti computazionali. Per quanto concerne i tempi di esecuzione dell'algoritmo, scrivo di seguito le specifiche della macchina sulla quale ho eseguito i test:
+We specify that the algorithms were written in the Python programming language, specifically in the Jupyter Notebook web application for creating and sharing computational documents. With regard to the algorithm execution times, I write below the specifications of the machine where I ran the tests:
 
-Processore	Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz   1.80 GHz 
+Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz 1.80 GHz 
 
-RAM installata	8,00 GB (7,90 GB utilizzabile) 
+Installed RAM 8.00 GB (7.90 GB usable) 
 
 
-Tipo sistema	Sistema operativo a 64 bit, processore basato su x64 
+System Type 64-bit operating system, x64-based processor
 \end{notabene}
 \[
 \]
 \newpage
 \section{T = 0.5}
-\section*{Caso n = 3}  
+\section*{Case n = 3}  
 \begin{table}[H]
 \centering
 \addtolength{\leftskip}{-1.5cm}
@@ -317,26 +316,26 @@ $\rho = 0.9$ & 15 & 18 & 16.1 & 2 & 3 & 2.1 & 4 & 4 & 4\\
 \end{table}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/graphics T = 0.5/n = 3, M = 1 sine and cosine.pdf}
+\includegraphics[width=0.9\textwidth]{images/graphs T = 0.5/n = 3, M = 1 sine and cosine.pdf}
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/graphics T = 0.5/n = 3, M = 10 sine and cosine.pdf}
+\includegraphics[width=0.9\textwidth]{images/graphs T = 0.5/n = 3, M = 10 sine and cosine.pdf}
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/graphics T = 0.5/n = 3, M = 100 sine and cosine.pdf}
+\includegraphics[width=0.9\textwidth]{images/graphs T = 0.5/n = 3, M = 100 sine and cosine.pdf}
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/graphics T = 0.5/n = 3, M = 1000 sine and cosine.pdf}
+\includegraphics[width=0.9\textwidth]{images/graphs T = 0.5/n = 3, M = 1000 sine and cosine.pdf}
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/graphics T = 0.5/n = 3, M = 10000 sine and cosine.pdf}
+\includegraphics[width=0.9\textwidth]{images/graphs T = 0.5/n = 3, M = 10000 sine and cosine.pdf}
 \end{figure}
 \newpage
-\section*{Caso n = 4}  
+\section*{Case n = 4}  
 \begin{table}[H]
 \centering
 \addtolength{\leftskip}{-1.5cm}
@@ -539,26 +538,26 @@ $\rho = 0.9$ & 29 & 35 & 32.7 & 2 & 2 & 2 & 3 & 4 & 3.1\\
 \end{table}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/graphics T = 0.5/n = 4, M = 1 sine and cosine.pdf}
+\includegraphics[width=0.9\textwidth]{images/graphs T = 0.5/n = 4, M = 1 sine and cosine.pdf}
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/graphics T = 0.5/n = 4, M = 10 sine and cosine.pdf}
+\includegraphics[width=0.9\textwidth]{images/graphs T = 0.5/n = 4, M = 10 sine and cosine.pdf}
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/graphics T = 0.5/n = 4, M = 100 sine and cosine.pdf}
+\includegraphics[width=0.9\textwidth]{images/graphs T = 0.5/n = 4, M = 100 sine and cosine.pdf}
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/graphics T = 0.5/n = 4, M = 1000 sine and cosine.pdf}
+\includegraphics[width=0.9\textwidth]{images/graphs T = 0.5/n = 4, M = 1000 sine and cosine.pdf}
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/graphics T = 0.5/n = 4, M = 10000 sine and cosine.pdf}
+\includegraphics[width=0.9\textwidth]{images/graphs T = 0.5/n = 4, M = 10000 sine and cosine.pdf}
 \end{figure}
 \newpage
-\section*{Caso n = 5} 
+\section*{Case n = 5} 
 \begin{table}[H]
 \centering
 \addtolength{\leftskip}{-1.5cm}
@@ -761,26 +760,26 @@ $\rho = 0.9$ & 59 & 66 & 63.4 & 1 & 1 & 1 & 2 & 3 & 2.9\\
 \end{table}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/graphics T = 0.5/n = 5, M = 1 sine and cosine.pdf}
+\includegraphics[width=0.9\textwidth]{images/graphs T = 0.5/n = 5, M = 1 sine and cosine.pdf}
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/graphics T = 0.5/n = 5, M = 10 sine and cosine.pdf}
+\includegraphics[width=0.9\textwidth]{images/graphs T = 0.5/n = 5, M = 10 sine and cosine.pdf}
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/graphics T = 0.5/n = 5, M = 100 sine and cosine.pdf}
+\includegraphics[width=0.9\textwidth]{images/graphs T = 0.5/n = 5, M = 100 sine and cosine.pdf}
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/graphics T = 0.5/n = 5, M = 1000 sine and cosine.pdf}
+\includegraphics[width=0.9\textwidth]{images/graphs T = 0.5/n = 5, M = 1000 sine and cosine.pdf}
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/graphics T = 0.5/n = 5, M = 10000 sine and cosine.pdf}
+\includegraphics[width=0.9\textwidth]{images/graphs T = 0.5/n = 5, M = 10000 sine and cosine.pdf}
 \end{figure}
 \newpage
-\section*{Caso n = 6}  
+\section*{Case n = 6}  
 \begin{table}[H]
 \centering
 \addtolength{\leftskip}{-1.5cm}
@@ -983,27 +982,27 @@ $\rho = 0.9$ & 114 & 128 & 121.3 & 1 & 2 & 1.1 & 2 & 2 & 2\\
 \end{table}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/graphics T = 0.5/n = 6, M = 1 sine and cosine.pdf}
+\includegraphics[width=0.9\textwidth]{images/graphs T = 0.5/n = 6, M = 1 sine and cosine.pdf}
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/graphics T = 0.5/n = 6, M = 10 sine and cosine.pdf}
+\includegraphics[width=0.9\textwidth]{images/graphs T = 0.5/n = 6, M = 10 sine and cosine.pdf}
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/graphics T = 0.5/n = 6, M = 100 sine and cosine.pdf}
+\includegraphics[width=0.9\textwidth]{images/graphs T = 0.5/n = 6, M = 100 sine and cosine.pdf}
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/graphics T = 0.5/n = 6, M = 1000 sine and cosine.pdf}
+\includegraphics[width=0.9\textwidth]{images/graphs T = 0.5/n = 6, M = 1000 sine and cosine.pdf}
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/graphics T = 0.5/n = 6, M = 10000 sine and cosine.pdf}
+\includegraphics[width=0.9\textwidth]{images/graphs T = 0.5/n = 6, M = 10000 sine and cosine.pdf}
 \end{figure}
 \newpage
 \section{T = 1}
-\section*{Caso n = 3} 
+\section*{Case n = 3} 
 \begin{table}[H]
 \centering
 \addtolength{\leftskip}{-1.5cm}
@@ -1206,26 +1205,26 @@ $\rho = 0.9$ & 7 & 11 & 7.7 & 4 & 4 & 4 & 8 & 8 & 8\\
 \end{table}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/graphics T = 1/n = 3, M = 1 sine and cosine.pdf}
+\includegraphics[width=0.9\textwidth]{images/graphs T = 1/n = 3, M = 1 sine and cosine.pdf}
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/graphics T = 1/n = 3, M = 10 sine and cosine.pdf}
+\includegraphics[width=0.9\textwidth]{images/graphs T = 1/n = 3, M = 10 sine and cosine.pdf}
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/graphics T = 1/n = 3, M = 100 sine and cosine.pdf}
+\includegraphics[width=0.9\textwidth]{images/graphs T = 1/n = 3, M = 100 sine and cosine.pdf}
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/graphics T = 1/n = 3, M = 1000 sine and cosine.pdf}
+\includegraphics[width=0.9\textwidth]{images/graphs T = 1/n = 3, M = 1000 sine and cosine.pdf}
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/graphics T = 1/n = 3, M = 10000 sine and cosine.pdf}
+\includegraphics[width=0.9\textwidth]{images/graphs T = 1/n = 3, M = 10000 sine and cosine.pdf}
 \end{figure}
 \newpage
-\section*{Caso n = 4} 
+\section*{Case n = 4} 
 \begin{table}[H]
 \centering
 \addtolength{\leftskip}{-1.5cm}
@@ -1428,26 +1427,26 @@ $\rho = 0.9$ & 12 & 15 & 13.3 & 3 & 3 & 3 & 7 & 7 & 7\\
 \end{table}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/graphics T = 1/n = 4, M = 1 sine and cosine.pdf}
+\includegraphics[width=0.9\textwidth]{images/graphs T = 1/n = 4, M = 1 sine and cosine.pdf}
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/graphics T = 1/n = 4, M = 10 sine and cosine.pdf}
+\includegraphics[width=0.9\textwidth]{images/graphs T = 1/n = 4, M = 10 sine and cosine.pdf}
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/graphics T = 1/n = 4, M = 100 sine and cosine.pdf}
+\includegraphics[width=0.9\textwidth]{images/graphs T = 1/n = 4, M = 100 sine and cosine.pdf}
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/graphics T = 1/n = 4, M = 1000 sine and cosine.pdf}
+\includegraphics[width=0.9\textwidth]{images/graphs T = 1/n = 4, M = 1000 sine and cosine.pdf}
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/graphics T = 1/n = 4, M = 10000 sine and cosine.pdf}
+\includegraphics[width=0.9\textwidth]{images/graphs T = 1/n = 4, M = 10000 sine and cosine.pdf}
 \end{figure}
 \newpage
-\section*{Caso n = 5} 
+\section*{Case n = 5} 
 \begin{table}[H]
 \centering
 \addtolength{\leftskip}{-1.5cm}
@@ -1650,26 +1649,26 @@ $\rho = 0.9$ & 22 & 31 & 24.3 & 3 & 3 & 3 & 5 & 6 & 5.5\\
 \end{table}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/graphics T = 1/n = 5, M = 1 sine and cosine.pdf}
+\includegraphics[width=0.9\textwidth]{images/graphs T = 1/n = 5, M = 1 sine and cosine.pdf}
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/graphics T = 1/n = 5, M = 10 sine and cosine.pdf}
+\includegraphics[width=0.9\textwidth]{images/graphs T = 1/n = 5, M = 10 sine and cosine.pdf}
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/graphics T = 1/n = 5, M = 100 sine and cosine.pdf}
+\includegraphics[width=0.9\textwidth]{images/graphs T = 1/n = 5, M = 100 sine and cosine.pdf}
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/graphics T = 1/n = 5, M = 1000 sine and cosine.pdf}
+\includegraphics[width=0.9\textwidth]{images/graphs T = 1/n = 5, M = 1000 sine and cosine.pdf}
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/graphics T = 1/n = 5, M = 10000 sine and cosine.pdf}
+\includegraphics[width=0.9\textwidth]{images/graphs T = 1/n = 5, M = 10000 sine and cosine.pdf}
 \end{figure}
 \newpage
-\section*{Caso n = 6} 
+\section*{Case n = 6} 
 \begin{table}[H]
 \centering
 \addtolength{\leftskip}{-1.5cm}
@@ -1872,27 +1871,27 @@ $\rho = 0.9$ & 41 & 45 & 42.3 & 2 & 2 & 2 & 5 & 5 & 5\\
 \end{table}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/graphics T = 1/n = 6, M = 1 sine and cosine.pdf}
+\includegraphics[width=0.9\textwidth]{images/graphs T = 1/n = 6, M = 1 sine and cosine.pdf}
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/graphics T = 1/n = 6, M = 10 sine and cosine.pdf}
+\includegraphics[width=0.9\textwidth]{images/graphs T = 1/n = 6, M = 10 sine and cosine.pdf}
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/graphics T = 1/n = 6, M = 100 sine and cosine.pdf}
+\includegraphics[width=0.9\textwidth]{images/graphs T = 1/n = 6, M = 100 sine and cosine.pdf}
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/graphics T = 1/n = 6, M = 1000 sine and cosine.pdf}
+\includegraphics[width=0.9\textwidth]{images/graphs T = 1/n = 6, M = 1000 sine and cosine.pdf}
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/graphics T = 1/n = 6, M = 10000 sine and cosine.pdf}
+\includegraphics[width=0.9\textwidth]{images/graphs T = 1/n = 6, M = 10000 sine and cosine.pdf}
 \end{figure}
 \newpage
 \section{T = 2}
-\section*{Caso n = 3} 
+\section*{Case n = 3} 
 \begin{table}[H]
 \centering
 \addtolength{\leftskip}{-1.5cm}
@@ -2095,26 +2094,26 @@ $\rho = 0.9$ & 3 & 3 & 3 & 8 & 9 & 8.2 &  & overflow & \\
 \end{table}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/graphics T = 2/n = 3, M = 1 sine and cosine.pdf}
+\includegraphics[width=0.9\textwidth]{images/graphs T = 2/n = 3, M = 1 sine and cosine.pdf}
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/graphics T = 2/n = 3, M = 10 sine and cosine.pdf}
+\includegraphics[width=0.9\textwidth]{images/graphs T = 2/n = 3, M = 10 sine and cosine.pdf}
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/graphics T = 2/n = 3, M = 100 sine and cosine.pdf}
+\includegraphics[width=0.9\textwidth]{images/graphs T = 2/n = 3, M = 100 sine and cosine.pdf}
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/graphics T = 2/n = 3, M = 1000 sine and cosine.pdf}
+\includegraphics[width=0.9\textwidth]{images/graphs T = 2/n = 3, M = 1000 sine and cosine.pdf}
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/graphics T = 2/n = 3, M = 10000 sine and cosine.pdf}
+\includegraphics[width=0.9\textwidth]{images/graphs T = 2/n = 3, M = 10000 sine and cosine.pdf}
 \end{figure}
 \newpage
-\section*{Caso n = 4} 
+\section*{Case n = 4} 
 \begin{table}[H]
 \centering
 \addtolength{\leftskip}{-1.5cm}
@@ -2317,26 +2316,26 @@ $\rho = 0.9$ & 3 & 4 & 3.6 & 7 & 7 & 7 &  & overflow & \\
 \end{table}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/graphics T = 2/n = 4, M = 1 sine and cosine.pdf}
+\includegraphics[width=0.9\textwidth]{images/graphs T = 2/n = 4, M = 1 sine and cosine.pdf}
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/graphics T = 2/n = 4, M = 10 sine and cosine.pdf}
+\includegraphics[width=0.9\textwidth]{images/graphs T = 2/n = 4, M = 10 sine and cosine.pdf}
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/graphics T = 2/n = 4, M = 100 sine and cosine.pdf}
+\includegraphics[width=0.9\textwidth]{images/graphs T = 2/n = 4, M = 100 sine and cosine.pdf}
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/graphics T = 2/n = 4, M = 1000 sine and cosine.pdf}
+\includegraphics[width=0.9\textwidth]{images/graphs T = 2/n = 4, M = 1000 sine and cosine.pdf}
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/graphics T = 2/n = 4, M = 10000 sine and cosine.pdf}
+\includegraphics[width=0.9\textwidth]{images/graphs T = 2/n = 4, M = 10000 sine and cosine.pdf}
 \end{figure}
 \newpage
-\section*{Caso n = 5} 
+\section*{Case n = 5} 
 \begin{table}[H]
 \centering
 \addtolength{\leftskip}{-1.5cm}
@@ -2539,26 +2538,26 @@ $\rho = 0.9$ & 5 & 8 & 6.2 & 5 & 6 & 5.1 &  & overflow & \\
 \end{table}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/graphics T = 2/n = 5, M = 1 sine and cosine.pdf}
+\includegraphics[width=0.9\textwidth]{images/graphs T = 2/n = 5, M = 1 sine and cosine.pdf}
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/graphics T = 2/n = 5, M = 10 sine and cosine.pdf}
+\includegraphics[width=0.9\textwidth]{images/graphs T = 2/n = 5, M = 10 sine and cosine.pdf}
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/graphics T = 2/n = 5, M = 100 sine and cosine.pdf}
+\includegraphics[width=0.9\textwidth]{images/graphs T = 2/n = 5, M = 100 sine and cosine.pdf}
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/graphics T = 2/n = 5, M = 1000 sine and cosine.pdf}
+\includegraphics[width=0.9\textwidth]{images/graphs T = 2/n = 5, M = 1000 sine and cosine.pdf}
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/graphics T = 2/n = 5, M = 10000 sine and cosine.pdf}
+\includegraphics[width=0.9\textwidth]{images/graphs T = 2/n = 5, M = 10000 sine and cosine.pdf}
 \end{figure}
 \newpage
-\section*{Caso n = 6} 
+\section*{Case n = 6} 
 \begin{table}[H]
 \centering
 \addtolength{\leftskip}{-1.5cm}
@@ -2761,27 +2760,27 @@ $\rho = 0.9$ & 7 & 9 & 8.3 & 5 & 5 & 5 & 12 & 17 & 13.6\\
 \end{table}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/graphics T = 2/n = 6, M = 1 sine and cosine.pdf}
+\includegraphics[width=0.9\textwidth]{images/graphs T = 2/n = 6, M = 1 sine and cosine.pdf}
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/graphics T = 2/n = 6, M = 10 sine and cosine.pdf}
+\includegraphics[width=0.9\textwidth]{images/graphs T = 2/n = 6, M = 10 sine and cosine.pdf}
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/graphics T = 2/n = 6, M = 100 sine and cosine.pdf}
+\includegraphics[width=0.9\textwidth]{images/graphs T = 2/n = 6, M = 100 sine and cosine.pdf}
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/graphics T = 2/n = 6, M = 1000 sine and cosine.pdf}
+\includegraphics[width=0.9\textwidth]{images/graphs T = 2/n = 6, M = 1000 sine and cosine.pdf}
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/graphics T = 2/n = 6, M = 10000 sine and cosine.pdf}
+\includegraphics[width=0.9\textwidth]{images/graphs T = 2/n = 6, M = 10000 sine and cosine.pdf}
 \end{figure}
 \newpage
 \section{T = 4}
-\section*{Caso n = 3} 
+\section*{Case n = 3} 
 \begin{table}[H]
 \centering
 \addtolength{\leftskip}{-1.5cm}
@@ -2984,26 +2983,26 @@ $\rho = 0.9$ & 3 & 3 & 3 &  & overflow &  &  & overflow & \\
 \end{table}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/graphics T = 4/n = 3, M = 1 sine and cosine.pdf}
+\includegraphics[width=0.9\textwidth]{images/graphs T = 4/n = 3, M = 1 sine and cosine.pdf}
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/graphics T = 4/n = 3, M = 10 sine and cosine.pdf}
+\includegraphics[width=0.9\textwidth]{images/graphs T = 4/n = 3, M = 10 sine and cosine.pdf}
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/graphics T = 4/n = 3, M = 100 sine and cosine.pdf}
+\includegraphics[width=0.9\textwidth]{images/graphs T = 4/n = 3, M = 100 sine and cosine.pdf}
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/graphics T = 4/n = 3, M = 1000 sine and cosine.pdf}
+\includegraphics[width=0.9\textwidth]{images/graphs T = 4/n = 3, M = 1000 sine and cosine.pdf}
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/graphics T = 4/n = 3, M = 10000 sine and cosine.pdf}
+\includegraphics[width=0.9\textwidth]{images/graphs T = 4/n = 3, M = 10000 sine and cosine.pdf}
 \end{figure}
 \newpage
-\section*{Caso n = 4} 
+\section*{Case n = 4} 
 \begin{table}[H]
 \centering
 \addtolength{\leftskip}{-1.5cm}
@@ -3206,26 +3205,26 @@ $\rho = 0.9$ & 3 & 3 & 3 &  & overflow & &  & overflow &  \\
 \end{table}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/graphics T = 4/n = 4, M = 1 sine and cosine.pdf}
+\includegraphics[width=0.9\textwidth]{images/graphs T = 4/n = 4, M = 1 sine and cosine.pdf}
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/graphics T = 4/n = 4, M = 10 sine and cosine.pdf}
+\includegraphics[width=0.9\textwidth]{images/graphs T = 4/n = 4, M = 10 sine and cosine.pdf}
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/graphics T = 4/n = 4, M = 100 sine and cosine.pdf}
+\includegraphics[width=0.9\textwidth]{images/graphs T = 4/n = 4, M = 100 sine and cosine.pdf}
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/graphics T = 4/n = 4, M = 1000 sine and cosine.pdf}
+\includegraphics[width=0.9\textwidth]{images/graphs T = 4/n = 4, M = 1000 sine and cosine.pdf}
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/graphics T = 4/n = 4, M = 10000 sine and cosine.pdf}
+\includegraphics[width=0.9\textwidth]{images/graphs T = 4/n = 4, M = 10000 sine and cosine.pdf}
 \end{figure}
 \newpage
-\section*{Caso n = 5} 
+\section*{Case n = 5} 
 \begin{table}[H]
 \centering
 \addtolength{\leftskip}{-1.5cm}
@@ -3428,26 +3427,26 @@ $\rho = 0.9$ & 2 & 3 & 2.4 &  & overflow &  &  & overflow & \\
 \end{table}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/graphics T = 4/n = 5, M = 1 sine and cosine.pdf}
+\includegraphics[width=0.9\textwidth]{images/graphs T = 4/n = 5, M = 1 sine and cosine.pdf}
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/graphics T = 4/n = 5, M = 10 sine and cosine.pdf}
+\includegraphics[width=0.9\textwidth]{images/graphs T = 4/n = 5, M = 10 sine and cosine.pdf}
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/graphics T = 4/n = 5, M = 100 sine and cosine.pdf}
+\includegraphics[width=0.9\textwidth]{images/graphs T = 4/n = 5, M = 100 sine and cosine.pdf}
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/graphics T = 4/n = 5, M = 1000 sine and cosine.pdf}
+\includegraphics[width=0.9\textwidth]{images/graphs T = 4/n = 5, M = 1000 sine and cosine.pdf}
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/graphics T = 4/n = 5, M = 10000 sine and cosine.pdf}
+\includegraphics[width=0.9\textwidth]{images/graphs T = 4/n = 5, M = 10000 sine and cosine.pdf}
 \end{figure}
 \newpage
-\section*{Caso n = 6} 
+\section*{Case n = 6} 
 \begin{table}[H]
 \centering
 \addtolength{\leftskip}{-1.5cm}
@@ -3650,220 +3649,36 @@ $\rho = 0.9$ & 3 & 3 & 3 & 15 & 187 & 60.5 &  & overflow &  \\
 \end{table}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/graphics T = 4/n = 6, M = 1 sine and cosine.pdf}
+\includegraphics[width=0.9\textwidth]{images/graphs T = 4/n = 6, M = 1 sine and cosine.pdf}
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/graphics T = 4/n = 6, M = 10 sine and cosine.pdf}
+\includegraphics[width=0.9\textwidth]{images/graphs T = 4/n = 6, M = 10 sine and cosine.pdf}
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/graphics T = 4/n = 6, M = 100 sine and cosine.pdf}
+\includegraphics[width=0.9\textwidth]{images/graphs T = 4/n = 6, M = 100 sine and cosine.pdf}
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/graphics T = 4/n = 6, M = 1000 sine and cosine.pdf}
+\includegraphics[width=0.9\textwidth]{images/graphs T = 4/n = 6, M = 1000 sine and cosine.pdf}
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/graphics T = 4/n = 6, M = 10000 sine and cosine.pdf}
+\includegraphics[width=0.9\textwidth]{images/graphs T = 4/n = 6, M = 10000 sine and cosine.pdf}
 \end{figure}
 \newpage
 
-\section{Osservazioni e Conclusioni}
-Lo studio condotto ha evidenziato come all'aumentare del parametro $M$ (lasciando fissi gli altri) si riducano considerevolmente sia i tempi di esecuzione che il numero di iterazioni necessarie per arrivare a convergenza. Però nel caso $M = 10^4$ i tempi tornano ad aumentare rispetto ai casi precedenti. Pertanto ne consegue che la casistica $M=10^3$ è la migliore sotto i due aspetti, tra quelle esposte. Questo è un risultato che si evince indipendentemente dalla scelta di $T$.
+\section{Observations and Conclusions}
+The study showed that as the parameter $M$ increases (leaving the others fixed), execution times and the number of iterations needed to achieve convergence are considerably reduced. However, in the case of $M = 10^4$ the times increase again compared to the previous oness. Therefore, it follows that $M=10^3$ is the best case study for both time and number of iterations. This result is independent of the choice of $T$.
 
-Per quanto concerne le sezioni $T = 0.5$ e $T =1$, si riscontra come per valori piccoli di $M$ le scelte di $r_0 = 1$ e $\rho = 0.6, 0.7$ generino spesso il caso più favorevole considerando tempi e numero di iterazioni. Mentre all'aumentare di $M$ i valori che risultano più efficienti sono con $r_0=5, 10$ e $\rho = 0.8, 0.9$, a discapito di $r_0=1$ che presenta numeri di iterazioni relativamente più grandi.
+As regards the sections $T = 0.5$ and $T =1$, we have that for small values of $M$ the choices of $r_0 = 1$ and $\rho = 0.6, 0.7$ often generate the best case considering times and number of iterations. But when we increase $M$, the values that are most efficient are $r_0=5, 10$ and $\rho = 0.8, 0.9$, rather than $r_0=1$ which has relatively larger iteration numbers.
 
-Si riscontra, osservando i grafici, un ricorrente picco nell'istante finale della soluzione approssimante. Tale picco però scompare quando si osserva il grafico relativo alla medesima casistica appartenente alla sezione col tempo finale successivo. Ciò è prova del fatto che la causa di tale picco possa essere data dalla scelta della base dei polinomi e non dall'approssimazione stessa.
+Observing the graphs, a recurring peak is found in the final instant of the approximate solution. However, this peak disappears when you look at the graph related to the same case history belonging to the section with the next final time. This is evidence that the cause of this peak can be given by the choice of the polynomial base and not by the approximation itself.
 
-Alla luce dei risultati ottenuti si evince rallentamento della convergenza del metodo all'aumentare dell'istante finale $T$. Si verifica inoltre, sempre all'aumentare di $T$, una maggiore presenza di fenomeni di non convergenza del metodo, principalmente nei casi con $M=1$. 
+Considering the outcomes of the study, the convergence of the method slows down as the final instant increases $T$. There is also, always with the increase of $T$, a greater presence of non convergence of the method, mainly in cases with $M=1$. 
 
-Infine si nota come nei casi $T = 2$ e $T = 4$ si presenti il fenomeno di overflow. Nella sezione $T = 2$ esso riguarda esclusivamente il caso $r_0 = 10$, con qualsiasi $\rho$ o $n$, fatta eccezione del caso $n = 6$ in cui si presenta solo per i valori $\rho = 0.6 $ e $0.7$. Per quanto riguarda la sezione $T = 4$ esso si verifica per tutti i casi con $r_0 = 10$. Si verifica anche per tutti i casi con $r_0 = 5$, fatta eccezione del caso $n = 6$ in cui si presenta solo per i valori $\rho = 0.6 $ e $0.7$.
+Finally, we note that in the cases $T = 2$ and $T = 4$ the phenomenon of overflow occurs. In the section $T = 2$ it only concerns the case $r_0 = 10$, with any $\rho$ or $n$, except for the case $n = 6$ where it only applies for the values $\rho = 0.6$ and $0.7$. As for the section $T = 4$ it occurs for all cases with $r_0 = 10$. It also occurs for all cases with $r_0 = 5$, except for the case $n = 6$ where it occurs only for the values $\rho = 0.6$ and $0.7$.
 
-
-
-\[
-\]
-\[
-\]
-\[
-\]
-\[
-\]
-%\begin{appendices}
-%\chapter{Richiami di Teoria della Probabilità}
-%In questa appendice denotiamo con la terna $(\Omega,\mathcal{F},P)$ uno spazio di probabilità. Indicheremo anche con la coppia $({\rm I\!R}^N,\mathcal{B})$ la coppa data da ${\rm I\!R}^N$ e l'insieme dei boreliani. Richiamiamo alcuni risultati ben noti di teoria della probabilità che chi saranno utili nel corso della tesi. Nell'esposizione di questi risultati seguiamo strettamente \cite{pascucciteoria}.
-%\[
-%\]
-%\begin{proposizione} [Disuguaglianza di Jensen in forma discreta]
-%Data una funzione $\psi$ convessa a valori reali e $ x_{1}, ... , x_{n}$ valori nel dominio allora vale la seguente disuguaglianza:
-%\[
-% \psi \left(\frac{1}{n} \sum_{i=1}^{n} x_{i} \right)   \leq \frac{1}{n} \sum_{i=1}^{n} \psi(x_{i}).
-%\]
-%\end{proposizione}
-%\[
-%\]
-%\begin{definizione}
-%Una variabile aleatoria (v.a.) su $(\Omega,\mathcal{F},P)$, è una funzione misurabile X da $(\Omega ,\mathcal{F})$ a $({\rm I\!R}^N,\mathcal{B})$.
-%
-%Data una variabile aleatoria $X:\Omega \longrightarrow {\rm I\!R}^N$ sommabile, il valore atteso di X è il vettore di ${\rm I\!R}^N$
-%\[
-%{\rm I\!E}[X]:= \int_{\Omega} XdP.
-%\]
-%\end{definizione}
-%\[
-%\]
-%\begin{definizione} \label{def processo}
-%Un processo stocastico discreto in ${\rm I\!R}^N$ è una famiglia $X=(X_n)_{n \in {\rm I\!N}_0}$ di v.a. definite su uno spazio di probabilità $(\Omega,\mathcal{F},P)$ a valori in ${\rm I\!R}^N$:
-%\[
-%X_n : \Omega \longrightarrow {\rm I\!R}^N, \ n \in {\rm I\!N}_0.
-%\]
-%La famiglia di $\sigma$-algebre $(\mathcal{F}_n^{X})_{n \in {\rm I\!R}_0}$ definita da:
-%\[
-%\mathcal{F}_n^{X}=\sigma (X_k, 0\leq k\leq n),
-%\]
-%si dice filtrazione naturale per X.
-%
-%In generale, una filtrazione sullo spazio di probabilità $(\Omega,\mathcal{F},P)$ è una famiglia $(\mathcal{F}_n)_{n \in {\rm I\!R}_0}$ crescente (cioè tale che $\mathcal{F}_n \subseteq \mathcal{F}_{n+1}$ per ogni n) di sotto-$\sigma$-algebre di $\mathcal{F}$.
-%
-%Il processo X si dice adattato alla filtrazione $(\mathcal{F}_n)$, se $X_n$ è $\mathcal{F}_n$-misurabile, o equivalentemente $\mathcal{F}_n^{X} \subseteq \mathcal{F}_n$, per ogni $n \in {\rm I\!N}_0$. Il processo X si dice sommabile se $X_n \in 
-%L^{1}(\Omega,P)$ per ogni $n \in {\rm I\!N}_0$.
-%\end{definizione}
-%\[
-%\]
-%\begin{definizione}
-%Data una variabile aleatoria reale sommabile X e un evento B di probabilità positiva, definiamo l'attesa di X condizionata all'evento B come l'attesa di X rispetto alla misura $P( \ \cdot \ |B)$
-%\[
-%{\rm I\!E}[X|B]:=\frac{1}{P(B)} \int_{B} X dP.
-%\]
-%\end{definizione}
-%\[
-%\]
-%\begin{teo} \label{vez quello prima}
-%Siano $X\in L^1(\Omega,\mathcal{F},P)$ a valori in ${\rm I\!R}^d$ e $\mathcal{G}$ una sotto-$\sigma$-algebra di $\mathcal{F}$. Esiste una v.a. $Z\in L^1(\Omega,P)$ a valori in ${\rm I\!R}^d$ che soddisfa le seguenti proprietà:
-%\begin{itemize}
-%\item $Z\in m\mathcal{G}$;\\
-%\item per ogni v.a. $W\in m\mathcal{G}$ limitata, vale
-%\[
-%{\rm I\!E}[ZW]={\rm I\!E}[XW].
-%\]
-%\end{itemize}
-%Inoltre se Z' verifica queste due condizioni allora Z=Z' quasi certamente.
-%\end{teo}
-%\[
-%\]
-%\begin{definizione}
-%Siano $X\in L^1(\Omega,\mathcal{F},P)$ e $\mathcal{G}$ una sotto-$\sigma$-algebra di $\mathcal{F}$. Se Z soddisfa le due proprietà del Teorema \ref{vez quello prima}, allora scriviamo
-%\[
-%Z={\rm I\!E}[X|\mathcal{G}]
-%\]
-%e diciamo che Z è una versione dell'attesa condizionata di X a $\mathcal{G}$. In particolare:
-%\begin{itemize}
-%\item se $\mathcal{G}=\sigma (Y)$ con Y v.a. su $(\Omega,\mathcal{F},P)$, scriviamo
-%\[
-%Z={\rm I\!E}[X|Y]
-%\]
-%invece di $Z={\rm I\!E}[X|\sigma (Y)]$;\\
-%\item se $X={\rm 1\!I}_F$ con $F\in \mathcal{F}$, scriviamo 
-%\[
-%Z=P(F|\mathcal{G})
-%\]
-%invece di $Z={\rm I\!E}[{\rm 1\!I}_F|\mathcal{G}]$ e diciamo che Z è una versione della probabilità di F condizionata a $\mathcal{G}$.
-%\end{itemize}
-%\end{definizione}
-%\[
-%\]
-%\begin{proposizione} \label{prop attesa condizionata}
-%Siano X $\in L^{1}(\Omega,\mathcal{F},P)$ e $\mathcal{G}$ $\subseteq$ $\mathcal{F}$ $\sigma$-algebra di $\Omega$. Allora vale:
-%\[
-%{\rm I\!E}[X]={\rm I\!E}[{\rm I\!E}[X|\mathcal{G}]].
-%\]
-%\end{proposizione}
-%\[
-%\]
-%\begin{proposizione}[Lemma della Torre]
-%Siano X $\in L^{1}(\Omega,\mathcal{F},P)$ e $\mathcal{G}$, $\mathcal{H}$ $\subseteq$ $\mathcal{F}$ $\sigma$-algebre di $\Omega$ tali che $\mathcal{H}$ $\subseteq$ $\mathcal{G}$. Allora vale:
-%\[
-%{\rm I\!E}[{\rm I\!E}[X|\mathcal{G}]|\mathcal{H}]={\rm I\!E}[X|\mathcal{H}].
-%\]
-%\end{proposizione}
-%\[
-%\]
-%\begin{proposizione}[Lemma di freezing]
-%Se X è indipendente da $\mathcal{G}$, $Y \in m\mathcal{G}$ e $f \in m\mathcal{B}$ è tale che $f(X,Y)\in L^1(\Omega,\mathcal{F},P)$, allora si ha
-%\[
-%{\rm I\!E}[f(X,Y)|\mathcal{G}]=F(y) \ dove \ F(y)={\rm I\!E}[f(X,y)],
-%\]
-%o, con una scrittura più compatta 
-%\[
-%{\rm I\!E}[f(X,Y)|\mathcal{G}]={\rm I\!E}[f(X,y)]|_{y=Y}.
-%\]
-%\end{proposizione}
-%\[
-%\]
-%\begin{proposizione} \label{prop attesa}
-%Siano X, Y $\in L^{1}(\Omega,\mathcal{F},P)$ e $\mathcal{G}$ $\sigma$-algebra di $\Omega$ tali che X è limitata e  $\mathcal{G}$-misurabile, allora vale
-%\[
-%{\rm I\!E}[XY|\mathcal{G}]=X{\rm I\!E}[Y|\mathcal{G}].
-%\]
-%\end{proposizione}                                                                                                                      
-%\[
-%\]
-%\begin{definizione} \label{def Markov}
-%Diciamo che un processo stocastico discreto $X=(X_n)$ su uno spazio di probabilità $(\Omega,\mathcal{F},P)$ con filtrazione $(\mathcal{F}_n)$, gode della proprietà di Markov se
-%\begin{itemize}
-%\item X è adattato a $(\mathcal{F}_n)$;
-%\item per ogni n e funzione $\mathcal{B}$-misurabile e limitata f, vale
-%\[
-%{\rm I\!E}[f(X_{n+1})|\mathcal{F}_n]={\rm I\!E}[f(X_{n+1})|X_n].
-%\]
-%\end{itemize}
-%\end{definizione}
-%\[
-%\]
-%
-%\chapter{Stime sulla Stabilità della SDE}
-%Lungo questa appendice, fissiamo $T>0$ e sia $(\Omega, \mathcal{F}, (\mathcal{F}_t)_{t\in[0,T]}, {\rm I\!P})$ uno spazio di probabilità filtrato, con $(\mathcal{F}_t)_{t\in[0,T]}$ che soddisfa le ipotesi usuali, che supporta un Moto Browniano $q$-dimensionale $W=(W_t)_{t\in[0,T]}$. Consideriamo la SDE a valori in ${\rm I\!R}^d$
-%\begin{equation} \label{SDEappendiceB}
-%d\mathcal{Y}_t = \rho_t \left(\mu(t,\mathcal{Y}_t)dt+\sigma(t,\mathcal{Y}_t)dW_t \right), \ \ \ \mathcal{Y}_0=\zeta,
-%\end{equation}
-%dove $\zeta$ è una variabile aleatoria $\mathcal{F}_0$-misurabile a valori in ${\rm I\!R}^d$, $\mu:[0,T]\times{\rm I\!R}^d\rightarrow{\rm I\!R}^{m\times d}$ e $\beta:[0,T]\times{\rm I\!R}^d\rightarrow{\rm I\!R}^{m\times d \times q}$ sono coefficienti deterministici e misurabili e $\rho = (\rho_t)_{t\in[0,T]}$ è un processo stocastico a valori in ${\rm I\!R}^m$ progressivamente misurabile. Di seguito denoteremo con $\mathcal{Y}^{\rho}$ una soluzione della SDE appena descritta.
-%\[
-%\]
-%\begin{lemma} \label{lemmaappendiceB}
-%Assumiamo che $\zeta \in L^2(\Omega, \mathcal{F}_0, {\rm I\!P})$, $\rho$ sia limitato e che esista una costante $\Lambda >0$ tale che:
-%\[
-%|\mu(t,x)-\mu(t,y)|+|\sigma(t,x)-\sigma(t,y)|\leq \Lambda |x-y|, \ \ \ t\in[0,T], \ x, y \in {\rm I\!R}^d,
-%\]
-%e tale che:
-%\[
-%|\mu(t,x)+\sigma(t,x)|\leq \Lambda (|1+x|), \ \ \ t\in[0,T], \ x\in {\rm I\!R}^d.
-%\]
-%Allora \ref{SDEappendiceB} ammette un'unica soluzione $\mathcal{Y}^{\rho}$ nel senso dell'indistinguibilità. Inoltre, per un dato $k>0$ e per ogni $\rho$ e $\tilde{\rho}$ con $\| \rho\|_{\mathcal{S}^{\infty}_T}$, $\| \tilde{\rho}\|_{\mathcal{S}^{\infty}_T} \leq k$, abbiamo:
-%\begin{itemize}
-%\item[(a)] se $\zeta \in L^{2p}(\Omega, \mathcal{F}_0, {\rm I\!P})$ per qualche $p\geq1$, allora
-%\[
-%\| \mathcal{Y}^{\rho}\|_{\mathcal{S}^{2p}_{[0,T]}}\leq C_1,
-%\]
-%dove $C_1>0$ dipende unicamente da $k, p, T, \Lambda, {\rm I\!E}[|\zeta^{2p}|]$ e dalla dimensione;
-%\item[(b)] se $\zeta \in L^{4p}(\Omega, \mathcal{F}_0, {\rm I\!P})$ per qualche $p\geq1$, allora
-%\[
-%\| \mathcal{Y}^{\rho}-\mathcal{Y}^{\tilde{\rho}}\|_{\mathcal{S}^{2p}_{[0,T]}}\leq C_2\| \rho - \tilde{\rho}\|_{{\rm I\!L}^{4p}_{[0,T]}},
-%\]
-%dove $C_2>0$ dipende unicamente da $k, p, T, \Lambda, {\rm I\!E}[|\zeta^{4p}|]$ e dalla dimensione;
-%\item[(c)] se
-%\[
-%\]  
-%allora per ogni $p\geq1$ abbiamo
-%\[
-%\| \mathcal{Y}^{\rho}-\mathcal{Y}^{\tilde{\rho}}\|_{\mathcal{S}^{2p}_{[0,T]}}\leq C_3\| \rho - \tilde{\rho}\|_{{\rm I\!L}^{2p}_{[0,T]}} \leq C_3 T^{\frac{1}{2p}}\| \rho - \tilde{\rho}\|_{\mathcal{S}^{\infty}_T},
-%\]
-%dove $C_3>0$ dipende unicamente da $k, p, T, \Lambda$ e dalla dimensione. Notiamo che la disuguaglianza appena scritta è vera solo assumendo $\zeta \in L^{2p}(\Omega, \mathcal{F}_0, {\rm I\!P})$ e che $C_3$ non dipenda da ${\rm I\!E}[|\zeta^{2}|]$.
-%\end{itemize}
-%\end{lemma}
-%\end{appendices}
-\nocite{*}
-\printbibliography
 
 \end{document}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.8.31)  5 APR 2023 14:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.8.31)  6 APR 2023 13:37
 entering extended mode
 **./tables_KSS.tex
 (tables_KSS.tex
@@ -578,7 +578,6 @@ Package biblatex Info: ... file 'tables_KSS.bbl' not found.
 No file tables_KSS.bbl.
 Package biblatex Info: Reference section=0 on input line 35.
 Package biblatex Info: Reference segment=0 on input line 35.
-Capitolo 1.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 41.
 
 ("C:\Users\Andrea\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
@@ -593,18 +592,17 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 
 {C:/Users/Andrea/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-Overfull \hbox (2.21321pt too wide) in paragraph at lines 59--60
-\OT1/cmr/m/n/10.95 (\OMS/cmsy/m/n/10.95 L\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.9
-5 a\OT1/cmr/m/n/10.95 ))[](\OML/cmm/m/it/10.95 t\OT1/cmr/m/n/10.95 )$ che sa-ra
-n-no ri-spet-ti-va-men-te le ap-pros-si-ma-zio-ni di $[][[](\OML/cmm/m/it/10.95
- X[]\OT1/cmr/m/n/10.95 )]$
- []
-
-
-Overfull \hbox (27.0678pt too wide) detected at line 62
+Overfull \hbox (34.18988pt too wide) detected at line 62
 \OML/cmm/m/it/10.95 g[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 t\OT1/cmr/m/n/10
 .95 ) := [] [] \OML/cmm/m/it/10.95 ; [][] \OT1/cmr/m/n/10.95 + [] [] [] \OML/cm
 m/m/it/10.95 :
+ []
+
+
+Overfull \hbox (48.19986pt too wide) in paragraph at lines 62--64
+\OT1/cmr/m/n/10.95 This ti-me, Eu-ler's me-thod for si-mu-la-ting $\OML/cmm/m/i
+t/10.95 Z\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 ; W\OT1/cmr/m/n/10.95 )$ and 
+$[]$
  []
 
 
@@ -613,1134 +611,1132 @@ Overfull \hbox (6.11874pt too wide) detected at line 72
  []
 
 [2]
-
-LaTeX Warning: Citation 'fehrman2020convergence' on page 3 undefined on input l
-ine 85.
+Overfull \hbox (0.94609pt too wide) detected at line 91
+[] \OML/cmm/m/it/10.95 < \OT1/cmr/m/n/10.95 1%   []   [] \OML/cmm/m/it/10.95 < 
+\OT1/cmr/m/n/10.95 1%\OML/cmm/m/it/10.95 :
+ []
 
 [3] [4]
-Overfull \hbox (5.28964pt too wide) in paragraph at lines 142--156
+Overfull \hbox (5.28964pt too wide) in paragraph at lines 141--155
  [][] 
  []
 
 
-Overfull \hbox (5.28964pt too wide) in paragraph at lines 182--196
+Overfull \hbox (5.28964pt too wide) in paragraph at lines 181--195
  [][] 
  []
 
 
-Overfull \hbox (5.28964pt too wide) in paragraph at lines 222--236
+Overfull \hbox (5.28964pt too wide) in paragraph at lines 221--235
  [][] 
  []
 
 [5]
-Overfull \hbox (5.28964pt too wide) in paragraph at lines 262--276
+Overfull \hbox (5.28964pt too wide) in paragraph at lines 261--275
  [][] 
  []
 
 
-Overfull \hbox (5.28964pt too wide) in paragraph at lines 302--316
+Overfull \hbox (5.28964pt too wide) in paragraph at lines 301--315
  [][] 
  []
 
-<images/graphics T = 0.5/n = 3, M = 1 sine and cosine.pdf, id=30, 462.52798pt x
- 346.89601pt>
-File: images/graphics T = 0.5/n = 3, M = 1 sine and cosine.pdf Graphic file (ty
-pe pdf)
-<use images/graphics T = 0.5/n = 3, M = 1 sine and cosine.pdf>
-Package pdftex.def Info: images/graphics T = 0.5/n = 3, M = 1 sine and cosine.p
-df  used on input line 320.
+<images/graphs T = 0.5/n = 3, M = 1 sine and cosine.pdf, id=30, 462.52798pt x 3
+46.89601pt>
+File: images/graphs T = 0.5/n = 3, M = 1 sine and cosine.pdf Graphic file (type
+ pdf)
+<use images/graphs T = 0.5/n = 3, M = 1 sine and cosine.pdf>
+Package pdftex.def Info: images/graphs T = 0.5/n = 3, M = 1 sine and cosine.pdf
+  used on input line 319.
 (pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
 [6]
-<images/graphics T = 0.5/n = 3, M = 10 sine and cosine.pdf, id=34, 462.52798pt 
+<images/graphs T = 0.5/n = 3, M = 10 sine and cosine.pdf, id=34, 462.52798pt x 
+346.89601pt>
+File: images/graphs T = 0.5/n = 3, M = 10 sine and cosine.pdf Graphic file (typ
+e pdf)
+<use images/graphs T = 0.5/n = 3, M = 10 sine and cosine.pdf>
+Package pdftex.def Info: images/graphs T = 0.5/n = 3, M = 10 sine and cosine.pd
+f  used on input line 323.
+(pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
+<images/graphs T = 0.5/n = 3, M = 100 sine and cosine.pdf, id=35, 462.52798pt x
+ 346.89601pt>
+File: images/graphs T = 0.5/n = 3, M = 100 sine and cosine.pdf Graphic file (ty
+pe pdf)
+<use images/graphs T = 0.5/n = 3, M = 100 sine and cosine.pdf>
+Package pdftex.def Info: images/graphs T = 0.5/n = 3, M = 100 sine and cosine.p
+df  used on input line 327.
+(pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
+ [7 <./images/graphs T = 0.5/n = 3, M = 1 sine and cosine.pdf>]
+<images/graphs T = 0.5/n = 3, M = 1000 sine and cosine.pdf, id=91, 462.52798pt 
 x 346.89601pt>
-File: images/graphics T = 0.5/n = 3, M = 10 sine and cosine.pdf Graphic file (t
+File: images/graphs T = 0.5/n = 3, M = 1000 sine and cosine.pdf Graphic file (t
 ype pdf)
-<use images/graphics T = 0.5/n = 3, M = 10 sine and cosine.pdf>
-Package pdftex.def Info: images/graphics T = 0.5/n = 3, M = 10 sine and cosine.
-pdf  used on input line 324.
+<use images/graphs T = 0.5/n = 3, M = 1000 sine and cosine.pdf>
+Package pdftex.def Info: images/graphs T = 0.5/n = 3, M = 1000 sine and cosine.
+pdf  used on input line 331.
 (pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
-<images/graphics T = 0.5/n = 3, M = 100 sine and cosine.pdf, id=35, 462.52798pt
+<images/graphs T = 0.5/n = 3, M = 10000 sine and cosine.pdf, id=92, 462.52798pt
  x 346.89601pt>
-File: images/graphics T = 0.5/n = 3, M = 100 sine and cosine.pdf Graphic file (
+File: images/graphs T = 0.5/n = 3, M = 10000 sine and cosine.pdf Graphic file (
 type pdf)
-<use images/graphics T = 0.5/n = 3, M = 100 sine and cosine.pdf>
-Package pdftex.def Info: images/graphics T = 0.5/n = 3, M = 100 sine and cosine
-.pdf  used on input line 328.
+<use images/graphs T = 0.5/n = 3, M = 10000 sine and cosine.pdf>
+Package pdftex.def Info: images/graphs T = 0.5/n = 3, M = 10000 sine and cosine
+.pdf  used on input line 335.
 (pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
- [7 <./images/graphics T = 0.5/n = 3, M = 1 sine and cosine.pdf>]
-<images/graphics T = 0.5/n = 3, M = 1000 sine and cosine.pdf, id=91, 462.52798p
-t x 346.89601pt>
-File: images/graphics T = 0.5/n = 3, M = 1000 sine and cosine.pdf Graphic file 
-(type pdf)
-<use images/graphics T = 0.5/n = 3, M = 1000 sine and cosine.pdf>
-Package pdftex.def Info: images/graphics T = 0.5/n = 3, M = 1000 sine and cosin
-e.pdf  used on input line 332.
-(pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
-<images/graphics T = 0.5/n = 3, M = 10000 sine and cosine.pdf, id=92, 462.52798
-pt x 346.89601pt>
-File: images/graphics T = 0.5/n = 3, M = 10000 sine and cosine.pdf Graphic file
- (type pdf)
-<use images/graphics T = 0.5/n = 3, M = 10000 sine and cosine.pdf>
-Package pdftex.def Info: images/graphics T = 0.5/n = 3, M = 10000 sine and cosi
-ne.pdf  used on input line 336.
-(pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
- [8 <./images/graphics T = 0.5/n = 3, M = 10 sine and cosine.pdf> <./images/gra
-phics T = 0.5/n = 3, M = 100 sine and cosine.pdf>] [9 <./images/graphics T = 0.
-5/n = 3, M = 1000 sine and cosine.pdf> <./images/graphics T = 0.5/n = 3, M = 10
-000 sine and cosine.pdf>]
-Overfull \hbox (5.56342pt too wide) in paragraph at lines 364--378
+ [8 <./images/graphs T = 0.5/n = 3, M = 10 sine and cosine.pdf> <./images/graph
+s T = 0.5/n = 3, M = 100 sine and cosine.pdf>] [9 <./images/graphs T = 0.5/n = 
+3, M = 1000 sine and cosine.pdf> <./images/graphs T = 0.5/n = 3, M = 10000 sine
+ and cosine.pdf>]
+Overfull \hbox (5.56342pt too wide) in paragraph at lines 363--377
  [][] 
  []
 
 
-Overfull \hbox (5.28964pt too wide) in paragraph at lines 404--418
+Overfull \hbox (5.28964pt too wide) in paragraph at lines 403--417
  [][] 
  []
 
 
-Overfull \hbox (5.28964pt too wide) in paragraph at lines 444--458
+Overfull \hbox (5.28964pt too wide) in paragraph at lines 443--457
  [][] 
  []
 
 [10]
-Overfull \hbox (5.28964pt too wide) in paragraph at lines 484--498
+Overfull \hbox (5.28964pt too wide) in paragraph at lines 483--497
  [][] 
  []
 
 
-Overfull \hbox (5.28964pt too wide) in paragraph at lines 524--538
+Overfull \hbox (5.28964pt too wide) in paragraph at lines 523--537
  [][] 
  []
 
-<images/graphics T = 0.5/n = 4, M = 1 sine and cosine.pdf, id=307, 462.52798pt 
-x 346.89601pt>
-File: images/graphics T = 0.5/n = 4, M = 1 sine and cosine.pdf Graphic file (ty
-pe pdf)
-<use images/graphics T = 0.5/n = 4, M = 1 sine and cosine.pdf>
-Package pdftex.def Info: images/graphics T = 0.5/n = 4, M = 1 sine and cosine.p
-df  used on input line 542.
+<images/graphs T = 0.5/n = 4, M = 1 sine and cosine.pdf, id=307, 462.52798pt x 
+346.89601pt>
+File: images/graphs T = 0.5/n = 4, M = 1 sine and cosine.pdf Graphic file (type
+ pdf)
+<use images/graphs T = 0.5/n = 4, M = 1 sine and cosine.pdf>
+Package pdftex.def Info: images/graphs T = 0.5/n = 4, M = 1 sine and cosine.pdf
+  used on input line 541.
 (pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
 [11]
-<images/graphics T = 0.5/n = 4, M = 10 sine and cosine.pdf, id=311, 462.52798pt
+<images/graphs T = 0.5/n = 4, M = 10 sine and cosine.pdf, id=311, 462.52798pt x
+ 346.89601pt>
+File: images/graphs T = 0.5/n = 4, M = 10 sine and cosine.pdf Graphic file (typ
+e pdf)
+<use images/graphs T = 0.5/n = 4, M = 10 sine and cosine.pdf>
+Package pdftex.def Info: images/graphs T = 0.5/n = 4, M = 10 sine and cosine.pd
+f  used on input line 545.
+(pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
+<images/graphs T = 0.5/n = 4, M = 100 sine and cosine.pdf, id=312, 462.52798pt 
+x 346.89601pt>
+File: images/graphs T = 0.5/n = 4, M = 100 sine and cosine.pdf Graphic file (ty
+pe pdf)
+<use images/graphs T = 0.5/n = 4, M = 100 sine and cosine.pdf>
+Package pdftex.def Info: images/graphs T = 0.5/n = 4, M = 100 sine and cosine.p
+df  used on input line 549.
+(pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
+ [12 <./images/graphs T = 0.5/n = 4, M = 1 sine and cosine.pdf>]
+<images/graphs T = 0.5/n = 4, M = 1000 sine and cosine.pdf, id=367, 462.52798pt
  x 346.89601pt>
-File: images/graphics T = 0.5/n = 4, M = 10 sine and cosine.pdf Graphic file (t
+File: images/graphs T = 0.5/n = 4, M = 1000 sine and cosine.pdf Graphic file (t
 ype pdf)
-<use images/graphics T = 0.5/n = 4, M = 10 sine and cosine.pdf>
-Package pdftex.def Info: images/graphics T = 0.5/n = 4, M = 10 sine and cosine.
-pdf  used on input line 546.
+<use images/graphs T = 0.5/n = 4, M = 1000 sine and cosine.pdf>
+Package pdftex.def Info: images/graphs T = 0.5/n = 4, M = 1000 sine and cosine.
+pdf  used on input line 553.
 (pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
-<images/graphics T = 0.5/n = 4, M = 100 sine and cosine.pdf, id=312, 462.52798p
+<images/graphs T = 0.5/n = 4, M = 10000 sine and cosine.pdf, id=368, 462.52798p
 t x 346.89601pt>
-File: images/graphics T = 0.5/n = 4, M = 100 sine and cosine.pdf Graphic file (
+File: images/graphs T = 0.5/n = 4, M = 10000 sine and cosine.pdf Graphic file (
 type pdf)
-<use images/graphics T = 0.5/n = 4, M = 100 sine and cosine.pdf>
-Package pdftex.def Info: images/graphics T = 0.5/n = 4, M = 100 sine and cosine
-.pdf  used on input line 550.
+<use images/graphs T = 0.5/n = 4, M = 10000 sine and cosine.pdf>
+Package pdftex.def Info: images/graphs T = 0.5/n = 4, M = 10000 sine and cosine
+.pdf  used on input line 557.
 (pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
- [12 <./images/graphics T = 0.5/n = 4, M = 1 sine and cosine.pdf>]
-<images/graphics T = 0.5/n = 4, M = 1000 sine and cosine.pdf, id=367, 462.52798
-pt x 346.89601pt>
-File: images/graphics T = 0.5/n = 4, M = 1000 sine and cosine.pdf Graphic file 
-(type pdf)
-<use images/graphics T = 0.5/n = 4, M = 1000 sine and cosine.pdf>
-Package pdftex.def Info: images/graphics T = 0.5/n = 4, M = 1000 sine and cosin
-e.pdf  used on input line 554.
-(pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
-<images/graphics T = 0.5/n = 4, M = 10000 sine and cosine.pdf, id=368, 462.5279
-8pt x 346.89601pt>
-File: images/graphics T = 0.5/n = 4, M = 10000 sine and cosine.pdf Graphic file
- (type pdf)
-<use images/graphics T = 0.5/n = 4, M = 10000 sine and cosine.pdf>
-Package pdftex.def Info: images/graphics T = 0.5/n = 4, M = 10000 sine and cosi
-ne.pdf  used on input line 558.
-(pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
- [13 <./images/graphics T = 0.5/n = 4, M = 10 sine and cosine.pdf> <./images/gr
-aphics T = 0.5/n = 4, M = 100 sine and cosine.pdf>] [14 <./images/graphics T = 
-0.5/n = 4, M = 1000 sine and cosine.pdf> <./images/graphics T = 0.5/n = 4, M = 
-10000 sine and cosine.pdf>]
-Overfull \hbox (5.56342pt too wide) in paragraph at lines 586--600
+ [13 <./images/graphs T = 0.5/n = 4, M = 10 sine and cosine.pdf> <./images/grap
+hs T = 0.5/n = 4, M = 100 sine and cosine.pdf>] [14 <./images/graphs T = 0.5/n 
+= 4, M = 1000 sine and cosine.pdf> <./images/graphs T = 0.5/n = 4, M = 10000 si
+ne and cosine.pdf>]
+Overfull \hbox (5.56342pt too wide) in paragraph at lines 585--599
  [][] 
  []
 
 
-Overfull \hbox (5.28964pt too wide) in paragraph at lines 626--640
+Overfull \hbox (5.28964pt too wide) in paragraph at lines 625--639
  [][] 
  []
 
 
-Overfull \hbox (5.28964pt too wide) in paragraph at lines 666--680
+Overfull \hbox (5.28964pt too wide) in paragraph at lines 665--679
  [][] 
  []
 
 [15]
-Overfull \hbox (5.28964pt too wide) in paragraph at lines 706--720
+Overfull \hbox (5.28964pt too wide) in paragraph at lines 705--719
  [][] 
  []
 
 
-Overfull \hbox (5.28964pt too wide) in paragraph at lines 746--760
+Overfull \hbox (5.28964pt too wide) in paragraph at lines 745--759
  [][] 
  []
 
-<images/graphics T = 0.5/n = 5, M = 1 sine and cosine.pdf, id=585, 462.52798pt 
-x 346.89601pt>
-File: images/graphics T = 0.5/n = 5, M = 1 sine and cosine.pdf Graphic file (ty
-pe pdf)
-<use images/graphics T = 0.5/n = 5, M = 1 sine and cosine.pdf>
-Package pdftex.def Info: images/graphics T = 0.5/n = 5, M = 1 sine and cosine.p
-df  used on input line 764.
+<images/graphs T = 0.5/n = 5, M = 1 sine and cosine.pdf, id=585, 462.52798pt x 
+346.89601pt>
+File: images/graphs T = 0.5/n = 5, M = 1 sine and cosine.pdf Graphic file (type
+ pdf)
+<use images/graphs T = 0.5/n = 5, M = 1 sine and cosine.pdf>
+Package pdftex.def Info: images/graphs T = 0.5/n = 5, M = 1 sine and cosine.pdf
+  used on input line 763.
 (pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
 [16]
-<images/graphics T = 0.5/n = 5, M = 10 sine and cosine.pdf, id=589, 462.52798pt
+<images/graphs T = 0.5/n = 5, M = 10 sine and cosine.pdf, id=589, 462.52798pt x
+ 346.89601pt>
+File: images/graphs T = 0.5/n = 5, M = 10 sine and cosine.pdf Graphic file (typ
+e pdf)
+<use images/graphs T = 0.5/n = 5, M = 10 sine and cosine.pdf>
+Package pdftex.def Info: images/graphs T = 0.5/n = 5, M = 10 sine and cosine.pd
+f  used on input line 767.
+(pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
+<images/graphs T = 0.5/n = 5, M = 100 sine and cosine.pdf, id=590, 462.52798pt 
+x 346.89601pt>
+File: images/graphs T = 0.5/n = 5, M = 100 sine and cosine.pdf Graphic file (ty
+pe pdf)
+<use images/graphs T = 0.5/n = 5, M = 100 sine and cosine.pdf>
+Package pdftex.def Info: images/graphs T = 0.5/n = 5, M = 100 sine and cosine.p
+df  used on input line 771.
+(pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
+ [17 <./images/graphs T = 0.5/n = 5, M = 1 sine and cosine.pdf>]
+<images/graphs T = 0.5/n = 5, M = 1000 sine and cosine.pdf, id=645, 462.52798pt
  x 346.89601pt>
-File: images/graphics T = 0.5/n = 5, M = 10 sine and cosine.pdf Graphic file (t
+File: images/graphs T = 0.5/n = 5, M = 1000 sine and cosine.pdf Graphic file (t
 ype pdf)
-<use images/graphics T = 0.5/n = 5, M = 10 sine and cosine.pdf>
-Package pdftex.def Info: images/graphics T = 0.5/n = 5, M = 10 sine and cosine.
-pdf  used on input line 768.
+<use images/graphs T = 0.5/n = 5, M = 1000 sine and cosine.pdf>
+Package pdftex.def Info: images/graphs T = 0.5/n = 5, M = 1000 sine and cosine.
+pdf  used on input line 775.
 (pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
-<images/graphics T = 0.5/n = 5, M = 100 sine and cosine.pdf, id=590, 462.52798p
+<images/graphs T = 0.5/n = 5, M = 10000 sine and cosine.pdf, id=646, 462.52798p
 t x 346.89601pt>
-File: images/graphics T = 0.5/n = 5, M = 100 sine and cosine.pdf Graphic file (
+File: images/graphs T = 0.5/n = 5, M = 10000 sine and cosine.pdf Graphic file (
 type pdf)
-<use images/graphics T = 0.5/n = 5, M = 100 sine and cosine.pdf>
-Package pdftex.def Info: images/graphics T = 0.5/n = 5, M = 100 sine and cosine
-.pdf  used on input line 772.
+<use images/graphs T = 0.5/n = 5, M = 10000 sine and cosine.pdf>
+Package pdftex.def Info: images/graphs T = 0.5/n = 5, M = 10000 sine and cosine
+.pdf  used on input line 779.
 (pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
- [17 <./images/graphics T = 0.5/n = 5, M = 1 sine and cosine.pdf>]
-<images/graphics T = 0.5/n = 5, M = 1000 sine and cosine.pdf, id=645, 462.52798
-pt x 346.89601pt>
-File: images/graphics T = 0.5/n = 5, M = 1000 sine and cosine.pdf Graphic file 
-(type pdf)
-<use images/graphics T = 0.5/n = 5, M = 1000 sine and cosine.pdf>
-Package pdftex.def Info: images/graphics T = 0.5/n = 5, M = 1000 sine and cosin
-e.pdf  used on input line 776.
-(pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
-<images/graphics T = 0.5/n = 5, M = 10000 sine and cosine.pdf, id=646, 462.5279
-8pt x 346.89601pt>
-File: images/graphics T = 0.5/n = 5, M = 10000 sine and cosine.pdf Graphic file
- (type pdf)
-<use images/graphics T = 0.5/n = 5, M = 10000 sine and cosine.pdf>
-Package pdftex.def Info: images/graphics T = 0.5/n = 5, M = 10000 sine and cosi
-ne.pdf  used on input line 780.
-(pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
- [18 <./images/graphics T = 0.5/n = 5, M = 10 sine and cosine.pdf> <./images/gr
-aphics T = 0.5/n = 5, M = 100 sine and cosine.pdf>] [19 <./images/graphics T = 
-0.5/n = 5, M = 1000 sine and cosine.pdf> <./images/graphics T = 0.5/n = 5, M = 
-10000 sine and cosine.pdf>]
-Overfull \hbox (5.56342pt too wide) in paragraph at lines 808--822
+ [18 <./images/graphs T = 0.5/n = 5, M = 10 sine and cosine.pdf> <./images/grap
+hs T = 0.5/n = 5, M = 100 sine and cosine.pdf>] [19 <./images/graphs T = 0.5/n 
+= 5, M = 1000 sine and cosine.pdf> <./images/graphs T = 0.5/n = 5, M = 10000 si
+ne and cosine.pdf>]
+Overfull \hbox (5.56342pt too wide) in paragraph at lines 807--821
  [][] 
  []
 
 
-Overfull \hbox (5.28964pt too wide) in paragraph at lines 848--862
+Overfull \hbox (5.28964pt too wide) in paragraph at lines 847--861
  [][] 
  []
 
 
-Overfull \hbox (5.28964pt too wide) in paragraph at lines 888--902
+Overfull \hbox (5.28964pt too wide) in paragraph at lines 887--901
  [][] 
  []
 
 [20]
-Overfull \hbox (5.28964pt too wide) in paragraph at lines 928--942
+Overfull \hbox (5.28964pt too wide) in paragraph at lines 927--941
  [][] 
  []
 
 
-Overfull \hbox (5.28964pt too wide) in paragraph at lines 968--982
+Overfull \hbox (5.28964pt too wide) in paragraph at lines 967--981
  [][] 
  []
 
-<images/graphics T = 0.5/n = 6, M = 1 sine and cosine.pdf, id=862, 462.52798pt 
-x 346.89601pt>
-File: images/graphics T = 0.5/n = 6, M = 1 sine and cosine.pdf Graphic file (ty
-pe pdf)
-<use images/graphics T = 0.5/n = 6, M = 1 sine and cosine.pdf>
-Package pdftex.def Info: images/graphics T = 0.5/n = 6, M = 1 sine and cosine.p
-df  used on input line 986.
+<images/graphs T = 0.5/n = 6, M = 1 sine and cosine.pdf, id=862, 462.52798pt x 
+346.89601pt>
+File: images/graphs T = 0.5/n = 6, M = 1 sine and cosine.pdf Graphic file (type
+ pdf)
+<use images/graphs T = 0.5/n = 6, M = 1 sine and cosine.pdf>
+Package pdftex.def Info: images/graphs T = 0.5/n = 6, M = 1 sine and cosine.pdf
+  used on input line 985.
 (pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
 [21]
-<images/graphics T = 0.5/n = 6, M = 10 sine and cosine.pdf, id=866, 462.52798pt
+<images/graphs T = 0.5/n = 6, M = 10 sine and cosine.pdf, id=866, 462.52798pt x
+ 346.89601pt>
+File: images/graphs T = 0.5/n = 6, M = 10 sine and cosine.pdf Graphic file (typ
+e pdf)
+<use images/graphs T = 0.5/n = 6, M = 10 sine and cosine.pdf>
+Package pdftex.def Info: images/graphs T = 0.5/n = 6, M = 10 sine and cosine.pd
+f  used on input line 989.
+(pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
+<images/graphs T = 0.5/n = 6, M = 100 sine and cosine.pdf, id=867, 462.52798pt 
+x 346.89601pt>
+File: images/graphs T = 0.5/n = 6, M = 100 sine and cosine.pdf Graphic file (ty
+pe pdf)
+<use images/graphs T = 0.5/n = 6, M = 100 sine and cosine.pdf>
+Package pdftex.def Info: images/graphs T = 0.5/n = 6, M = 100 sine and cosine.p
+df  used on input line 993.
+(pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
+ [22 <./images/graphs T = 0.5/n = 6, M = 1 sine and cosine.pdf>]
+<images/graphs T = 0.5/n = 6, M = 1000 sine and cosine.pdf, id=922, 462.52798pt
  x 346.89601pt>
-File: images/graphics T = 0.5/n = 6, M = 10 sine and cosine.pdf Graphic file (t
+File: images/graphs T = 0.5/n = 6, M = 1000 sine and cosine.pdf Graphic file (t
 ype pdf)
-<use images/graphics T = 0.5/n = 6, M = 10 sine and cosine.pdf>
-Package pdftex.def Info: images/graphics T = 0.5/n = 6, M = 10 sine and cosine.
-pdf  used on input line 990.
+<use images/graphs T = 0.5/n = 6, M = 1000 sine and cosine.pdf>
+Package pdftex.def Info: images/graphs T = 0.5/n = 6, M = 1000 sine and cosine.
+pdf  used on input line 997.
 (pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
-<images/graphics T = 0.5/n = 6, M = 100 sine and cosine.pdf, id=867, 462.52798p
+<images/graphs T = 0.5/n = 6, M = 10000 sine and cosine.pdf, id=923, 462.52798p
 t x 346.89601pt>
-File: images/graphics T = 0.5/n = 6, M = 100 sine and cosine.pdf Graphic file (
+File: images/graphs T = 0.5/n = 6, M = 10000 sine and cosine.pdf Graphic file (
 type pdf)
-<use images/graphics T = 0.5/n = 6, M = 100 sine and cosine.pdf>
-Package pdftex.def Info: images/graphics T = 0.5/n = 6, M = 100 sine and cosine
-.pdf  used on input line 994.
+<use images/graphs T = 0.5/n = 6, M = 10000 sine and cosine.pdf>
+Package pdftex.def Info: images/graphs T = 0.5/n = 6, M = 10000 sine and cosine
+.pdf  used on input line 1001.
 (pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
- [22 <./images/graphics T = 0.5/n = 6, M = 1 sine and cosine.pdf>]
-<images/graphics T = 0.5/n = 6, M = 1000 sine and cosine.pdf, id=922, 462.52798
-pt x 346.89601pt>
-File: images/graphics T = 0.5/n = 6, M = 1000 sine and cosine.pdf Graphic file 
-(type pdf)
-<use images/graphics T = 0.5/n = 6, M = 1000 sine and cosine.pdf>
-Package pdftex.def Info: images/graphics T = 0.5/n = 6, M = 1000 sine and cosin
-e.pdf  used on input line 998.
-(pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
-<images/graphics T = 0.5/n = 6, M = 10000 sine and cosine.pdf, id=923, 462.5279
-8pt x 346.89601pt>
-File: images/graphics T = 0.5/n = 6, M = 10000 sine and cosine.pdf Graphic file
- (type pdf)
-<use images/graphics T = 0.5/n = 6, M = 10000 sine and cosine.pdf>
-Package pdftex.def Info: images/graphics T = 0.5/n = 6, M = 10000 sine and cosi
-ne.pdf  used on input line 1002.
-(pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
- [23 <./images/graphics T = 0.5/n = 6, M = 10 sine and cosine.pdf> <./images/gr
-aphics T = 0.5/n = 6, M = 100 sine and cosine.pdf>] [24 <./images/graphics T = 
-0.5/n = 6, M = 1000 sine and cosine.pdf> <./images/graphics T = 0.5/n = 6, M = 
-10000 sine and cosine.pdf>]
-Overfull \hbox (5.28964pt too wide) in paragraph at lines 1031--1045
+ [23 <./images/graphs T = 0.5/n = 6, M = 10 sine and cosine.pdf> <./images/grap
+hs T = 0.5/n = 6, M = 100 sine and cosine.pdf>] [24 <./images/graphs T = 0.5/n 
+= 6, M = 1000 sine and cosine.pdf> <./images/graphs T = 0.5/n = 6, M = 10000 si
+ne and cosine.pdf>]
+Overfull \hbox (5.28964pt too wide) in paragraph at lines 1030--1044
  [][] 
  []
 
 
-Overfull \hbox (5.28964pt too wide) in paragraph at lines 1071--1085
+Overfull \hbox (5.28964pt too wide) in paragraph at lines 1070--1084
  [][] 
  []
 
 
-Overfull \hbox (5.28964pt too wide) in paragraph at lines 1111--1125
+Overfull \hbox (5.28964pt too wide) in paragraph at lines 1110--1124
  [][] 
  []
 
 [25]
-Overfull \hbox (5.28964pt too wide) in paragraph at lines 1151--1165
+Overfull \hbox (5.28964pt too wide) in paragraph at lines 1150--1164
  [][] 
  []
 
 
-Overfull \hbox (5.28964pt too wide) in paragraph at lines 1191--1205
+Overfull \hbox (5.28964pt too wide) in paragraph at lines 1190--1204
  [][] 
  []
 
-<images/graphics T = 1/n = 3, M = 1 sine and cosine.pdf, id=1139, 462.52798pt x
- 346.89601pt>
-File: images/graphics T = 1/n = 3, M = 1 sine and cosine.pdf Graphic file (type
- pdf)
-<use images/graphics T = 1/n = 3, M = 1 sine and cosine.pdf>
-Package pdftex.def Info: images/graphics T = 1/n = 3, M = 1 sine and cosine.pdf
-  used on input line 1209.
+<images/graphs T = 1/n = 3, M = 1 sine and cosine.pdf, id=1139, 462.52798pt x 3
+46.89601pt>
+File: images/graphs T = 1/n = 3, M = 1 sine and cosine.pdf Graphic file (type p
+df)
+<use images/graphs T = 1/n = 3, M = 1 sine and cosine.pdf>
+Package pdftex.def Info: images/graphs T = 1/n = 3, M = 1 sine and cosine.pdf  
+used on input line 1208.
 (pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
 [26]
-<images/graphics T = 1/n = 3, M = 10 sine and cosine.pdf, id=1143, 462.52798pt 
+<images/graphs T = 1/n = 3, M = 10 sine and cosine.pdf, id=1143, 462.52798pt x 
+346.89601pt>
+File: images/graphs T = 1/n = 3, M = 10 sine and cosine.pdf Graphic file (type 
+pdf)
+<use images/graphs T = 1/n = 3, M = 10 sine and cosine.pdf>
+Package pdftex.def Info: images/graphs T = 1/n = 3, M = 10 sine and cosine.pdf 
+ used on input line 1212.
+(pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
+<images/graphs T = 1/n = 3, M = 100 sine and cosine.pdf, id=1144, 462.52798pt x
+ 346.89601pt>
+File: images/graphs T = 1/n = 3, M = 100 sine and cosine.pdf Graphic file (type
+ pdf)
+<use images/graphs T = 1/n = 3, M = 100 sine and cosine.pdf>
+Package pdftex.def Info: images/graphs T = 1/n = 3, M = 100 sine and cosine.pdf
+  used on input line 1216.
+(pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
+ [27 <./images/graphs T = 1/n = 3, M = 1 sine and cosine.pdf>]
+<images/graphs T = 1/n = 3, M = 1000 sine and cosine.pdf, id=1198, 462.52798pt 
 x 346.89601pt>
-File: images/graphics T = 1/n = 3, M = 10 sine and cosine.pdf Graphic file (typ
+File: images/graphs T = 1/n = 3, M = 1000 sine and cosine.pdf Graphic file (typ
 e pdf)
-<use images/graphics T = 1/n = 3, M = 10 sine and cosine.pdf>
-Package pdftex.def Info: images/graphics T = 1/n = 3, M = 10 sine and cosine.pd
-f  used on input line 1213.
+<use images/graphs T = 1/n = 3, M = 1000 sine and cosine.pdf>
+Package pdftex.def Info: images/graphs T = 1/n = 3, M = 1000 sine and cosine.pd
+f  used on input line 1220.
 (pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
-<images/graphics T = 1/n = 3, M = 100 sine and cosine.pdf, id=1144, 462.52798pt
+<images/graphs T = 1/n = 3, M = 10000 sine and cosine.pdf, id=1199, 462.52798pt
  x 346.89601pt>
-File: images/graphics T = 1/n = 3, M = 100 sine and cosine.pdf Graphic file (ty
+File: images/graphs T = 1/n = 3, M = 10000 sine and cosine.pdf Graphic file (ty
 pe pdf)
-<use images/graphics T = 1/n = 3, M = 100 sine and cosine.pdf>
-Package pdftex.def Info: images/graphics T = 1/n = 3, M = 100 sine and cosine.p
-df  used on input line 1217.
+<use images/graphs T = 1/n = 3, M = 10000 sine and cosine.pdf>
+Package pdftex.def Info: images/graphs T = 1/n = 3, M = 10000 sine and cosine.p
+df  used on input line 1224.
 (pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
- [27 <./images/graphics T = 1/n = 3, M = 1 sine and cosine.pdf>]
-<images/graphics T = 1/n = 3, M = 1000 sine and cosine.pdf, id=1198, 462.52798p
-t x 346.89601pt>
-File: images/graphics T = 1/n = 3, M = 1000 sine and cosine.pdf Graphic file (t
-ype pdf)
-<use images/graphics T = 1/n = 3, M = 1000 sine and cosine.pdf>
-Package pdftex.def Info: images/graphics T = 1/n = 3, M = 1000 sine and cosine.
-pdf  used on input line 1221.
-(pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
-<images/graphics T = 1/n = 3, M = 10000 sine and cosine.pdf, id=1199, 462.52798
-pt x 346.89601pt>
-File: images/graphics T = 1/n = 3, M = 10000 sine and cosine.pdf Graphic file (
-type pdf)
-<use images/graphics T = 1/n = 3, M = 10000 sine and cosine.pdf>
-Package pdftex.def Info: images/graphics T = 1/n = 3, M = 10000 sine and cosine
-.pdf  used on input line 1225.
-(pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
- [28 <./images/graphics T = 1/n = 3, M = 10 sine and cosine.pdf> <./images/grap
-hics T = 1/n = 3, M = 100 sine and cosine.pdf>] [29 <./images/graphics T = 1/n 
-= 3, M = 1000 sine and cosine.pdf> <./images/graphics T = 1/n = 3, M = 10000 si
-ne and cosine.pdf>]
-Overfull \hbox (5.56342pt too wide) in paragraph at lines 1253--1267
+ [28 <./images/graphs T = 1/n = 3, M = 10 sine and cosine.pdf> <./images/graphs
+ T = 1/n = 3, M = 100 sine and cosine.pdf>] [29 <./images/graphs T = 1/n = 3, M
+ = 1000 sine and cosine.pdf> <./images/graphs T = 1/n = 3, M = 10000 sine and c
+osine.pdf>]
+Overfull \hbox (5.56342pt too wide) in paragraph at lines 1252--1266
  [][] 
  []
 
 
-Overfull \hbox (5.28964pt too wide) in paragraph at lines 1293--1307
+Overfull \hbox (5.28964pt too wide) in paragraph at lines 1292--1306
  [][] 
  []
 
 
-Overfull \hbox (5.28964pt too wide) in paragraph at lines 1333--1347
+Overfull \hbox (5.28964pt too wide) in paragraph at lines 1332--1346
  [][] 
  []
 
 [30]
-Overfull \hbox (5.28964pt too wide) in paragraph at lines 1373--1387
+Overfull \hbox (5.28964pt too wide) in paragraph at lines 1372--1386
  [][] 
  []
 
 
-Overfull \hbox (5.28964pt too wide) in paragraph at lines 1413--1427
+Overfull \hbox (5.28964pt too wide) in paragraph at lines 1412--1426
  [][] 
  []
 
-<images/graphics T = 1/n = 4, M = 1 sine and cosine.pdf, id=1411, 462.52798pt x
- 346.89601pt>
-File: images/graphics T = 1/n = 4, M = 1 sine and cosine.pdf Graphic file (type
- pdf)
-<use images/graphics T = 1/n = 4, M = 1 sine and cosine.pdf>
-Package pdftex.def Info: images/graphics T = 1/n = 4, M = 1 sine and cosine.pdf
-  used on input line 1431.
+<images/graphs T = 1/n = 4, M = 1 sine and cosine.pdf, id=1411, 462.52798pt x 3
+46.89601pt>
+File: images/graphs T = 1/n = 4, M = 1 sine and cosine.pdf Graphic file (type p
+df)
+<use images/graphs T = 1/n = 4, M = 1 sine and cosine.pdf>
+Package pdftex.def Info: images/graphs T = 1/n = 4, M = 1 sine and cosine.pdf  
+used on input line 1430.
 (pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
 [31]
-<images/graphics T = 1/n = 4, M = 10 sine and cosine.pdf, id=1416, 462.52798pt 
+<images/graphs T = 1/n = 4, M = 10 sine and cosine.pdf, id=1416, 462.52798pt x 
+346.89601pt>
+File: images/graphs T = 1/n = 4, M = 10 sine and cosine.pdf Graphic file (type 
+pdf)
+<use images/graphs T = 1/n = 4, M = 10 sine and cosine.pdf>
+Package pdftex.def Info: images/graphs T = 1/n = 4, M = 10 sine and cosine.pdf 
+ used on input line 1434.
+(pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
+<images/graphs T = 1/n = 4, M = 100 sine and cosine.pdf, id=1417, 462.52798pt x
+ 346.89601pt>
+File: images/graphs T = 1/n = 4, M = 100 sine and cosine.pdf Graphic file (type
+ pdf)
+<use images/graphs T = 1/n = 4, M = 100 sine and cosine.pdf>
+Package pdftex.def Info: images/graphs T = 1/n = 4, M = 100 sine and cosine.pdf
+  used on input line 1438.
+(pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
+ [32 <./images/graphs T = 1/n = 4, M = 1 sine and cosine.pdf>]
+<images/graphs T = 1/n = 4, M = 1000 sine and cosine.pdf, id=1472, 462.52798pt 
 x 346.89601pt>
-File: images/graphics T = 1/n = 4, M = 10 sine and cosine.pdf Graphic file (typ
+File: images/graphs T = 1/n = 4, M = 1000 sine and cosine.pdf Graphic file (typ
 e pdf)
-<use images/graphics T = 1/n = 4, M = 10 sine and cosine.pdf>
-Package pdftex.def Info: images/graphics T = 1/n = 4, M = 10 sine and cosine.pd
-f  used on input line 1435.
+<use images/graphs T = 1/n = 4, M = 1000 sine and cosine.pdf>
+Package pdftex.def Info: images/graphs T = 1/n = 4, M = 1000 sine and cosine.pd
+f  used on input line 1442.
 (pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
-<images/graphics T = 1/n = 4, M = 100 sine and cosine.pdf, id=1417, 462.52798pt
+<images/graphs T = 1/n = 4, M = 10000 sine and cosine.pdf, id=1473, 462.52798pt
  x 346.89601pt>
-File: images/graphics T = 1/n = 4, M = 100 sine and cosine.pdf Graphic file (ty
+File: images/graphs T = 1/n = 4, M = 10000 sine and cosine.pdf Graphic file (ty
 pe pdf)
-<use images/graphics T = 1/n = 4, M = 100 sine and cosine.pdf>
-Package pdftex.def Info: images/graphics T = 1/n = 4, M = 100 sine and cosine.p
-df  used on input line 1439.
+<use images/graphs T = 1/n = 4, M = 10000 sine and cosine.pdf>
+Package pdftex.def Info: images/graphs T = 1/n = 4, M = 10000 sine and cosine.p
+df  used on input line 1446.
 (pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
- [32 <./images/graphics T = 1/n = 4, M = 1 sine and cosine.pdf>]
-<images/graphics T = 1/n = 4, M = 1000 sine and cosine.pdf, id=1472, 462.52798p
-t x 346.89601pt>
-File: images/graphics T = 1/n = 4, M = 1000 sine and cosine.pdf Graphic file (t
-ype pdf)
-<use images/graphics T = 1/n = 4, M = 1000 sine and cosine.pdf>
-Package pdftex.def Info: images/graphics T = 1/n = 4, M = 1000 sine and cosine.
-pdf  used on input line 1443.
-(pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
-<images/graphics T = 1/n = 4, M = 10000 sine and cosine.pdf, id=1473, 462.52798
-pt x 346.89601pt>
-File: images/graphics T = 1/n = 4, M = 10000 sine and cosine.pdf Graphic file (
-type pdf)
-<use images/graphics T = 1/n = 4, M = 10000 sine and cosine.pdf>
-Package pdftex.def Info: images/graphics T = 1/n = 4, M = 10000 sine and cosine
-.pdf  used on input line 1447.
-(pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
- [33 <./images/graphics T = 1/n = 4, M = 10 sine and cosine.pdf> <./images/grap
-hics T = 1/n = 4, M = 100 sine and cosine.pdf>] [34 <./images/graphics T = 1/n 
-= 4, M = 1000 sine and cosine.pdf> <./images/graphics T = 1/n = 4, M = 10000 si
-ne and cosine.pdf>]
-Overfull \hbox (5.56342pt too wide) in paragraph at lines 1475--1489
+ [33 <./images/graphs T = 1/n = 4, M = 10 sine and cosine.pdf> <./images/graphs
+ T = 1/n = 4, M = 100 sine and cosine.pdf>] [34 <./images/graphs T = 1/n = 4, M
+ = 1000 sine and cosine.pdf> <./images/graphs T = 1/n = 4, M = 10000 sine and c
+osine.pdf>]
+Overfull \hbox (5.56342pt too wide) in paragraph at lines 1474--1488
  [][] 
  []
 
 
-Overfull \hbox (5.28964pt too wide) in paragraph at lines 1515--1529
+Overfull \hbox (5.28964pt too wide) in paragraph at lines 1514--1528
  [][] 
  []
 
 
-Overfull \hbox (5.28964pt too wide) in paragraph at lines 1555--1569
+Overfull \hbox (5.28964pt too wide) in paragraph at lines 1554--1568
  [][] 
  []
 
 [35]
-Overfull \hbox (5.28964pt too wide) in paragraph at lines 1595--1609
+Overfull \hbox (5.28964pt too wide) in paragraph at lines 1594--1608
  [][] 
  []
 
 
-Overfull \hbox (5.28964pt too wide) in paragraph at lines 1635--1649
+Overfull \hbox (5.28964pt too wide) in paragraph at lines 1634--1648
  [][] 
  []
 
-<images/graphics T = 1/n = 5, M = 1 sine and cosine.pdf, id=1686, 462.52798pt x
- 346.89601pt>
-File: images/graphics T = 1/n = 5, M = 1 sine and cosine.pdf Graphic file (type
- pdf)
-<use images/graphics T = 1/n = 5, M = 1 sine and cosine.pdf>
-Package pdftex.def Info: images/graphics T = 1/n = 5, M = 1 sine and cosine.pdf
-  used on input line 1653.
+<images/graphs T = 1/n = 5, M = 1 sine and cosine.pdf, id=1686, 462.52798pt x 3
+46.89601pt>
+File: images/graphs T = 1/n = 5, M = 1 sine and cosine.pdf Graphic file (type p
+df)
+<use images/graphs T = 1/n = 5, M = 1 sine and cosine.pdf>
+Package pdftex.def Info: images/graphs T = 1/n = 5, M = 1 sine and cosine.pdf  
+used on input line 1652.
 (pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
 [36]
-<images/graphics T = 1/n = 5, M = 10 sine and cosine.pdf, id=1690, 462.52798pt 
+<images/graphs T = 1/n = 5, M = 10 sine and cosine.pdf, id=1690, 462.52798pt x 
+346.89601pt>
+File: images/graphs T = 1/n = 5, M = 10 sine and cosine.pdf Graphic file (type 
+pdf)
+<use images/graphs T = 1/n = 5, M = 10 sine and cosine.pdf>
+Package pdftex.def Info: images/graphs T = 1/n = 5, M = 10 sine and cosine.pdf 
+ used on input line 1656.
+(pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
+<images/graphs T = 1/n = 5, M = 100 sine and cosine.pdf, id=1691, 462.52798pt x
+ 346.89601pt>
+File: images/graphs T = 1/n = 5, M = 100 sine and cosine.pdf Graphic file (type
+ pdf)
+<use images/graphs T = 1/n = 5, M = 100 sine and cosine.pdf>
+Package pdftex.def Info: images/graphs T = 1/n = 5, M = 100 sine and cosine.pdf
+  used on input line 1660.
+(pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
+ [37 <./images/graphs T = 1/n = 5, M = 1 sine and cosine.pdf>]
+<images/graphs T = 1/n = 5, M = 1000 sine and cosine.pdf, id=1746, 462.52798pt 
 x 346.89601pt>
-File: images/graphics T = 1/n = 5, M = 10 sine and cosine.pdf Graphic file (typ
+File: images/graphs T = 1/n = 5, M = 1000 sine and cosine.pdf Graphic file (typ
 e pdf)
-<use images/graphics T = 1/n = 5, M = 10 sine and cosine.pdf>
-Package pdftex.def Info: images/graphics T = 1/n = 5, M = 10 sine and cosine.pd
-f  used on input line 1657.
+<use images/graphs T = 1/n = 5, M = 1000 sine and cosine.pdf>
+Package pdftex.def Info: images/graphs T = 1/n = 5, M = 1000 sine and cosine.pd
+f  used on input line 1664.
 (pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
-<images/graphics T = 1/n = 5, M = 100 sine and cosine.pdf, id=1691, 462.52798pt
+<images/graphs T = 1/n = 5, M = 10000 sine and cosine.pdf, id=1747, 462.52798pt
  x 346.89601pt>
-File: images/graphics T = 1/n = 5, M = 100 sine and cosine.pdf Graphic file (ty
+File: images/graphs T = 1/n = 5, M = 10000 sine and cosine.pdf Graphic file (ty
 pe pdf)
-<use images/graphics T = 1/n = 5, M = 100 sine and cosine.pdf>
-Package pdftex.def Info: images/graphics T = 1/n = 5, M = 100 sine and cosine.p
-df  used on input line 1661.
+<use images/graphs T = 1/n = 5, M = 10000 sine and cosine.pdf>
+Package pdftex.def Info: images/graphs T = 1/n = 5, M = 10000 sine and cosine.p
+df  used on input line 1668.
 (pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
- [37 <./images/graphics T = 1/n = 5, M = 1 sine and cosine.pdf>]
-<images/graphics T = 1/n = 5, M = 1000 sine and cosine.pdf, id=1746, 462.52798p
-t x 346.89601pt>
-File: images/graphics T = 1/n = 5, M = 1000 sine and cosine.pdf Graphic file (t
-ype pdf)
-<use images/graphics T = 1/n = 5, M = 1000 sine and cosine.pdf>
-Package pdftex.def Info: images/graphics T = 1/n = 5, M = 1000 sine and cosine.
-pdf  used on input line 1665.
-(pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
-<images/graphics T = 1/n = 5, M = 10000 sine and cosine.pdf, id=1747, 462.52798
-pt x 346.89601pt>
-File: images/graphics T = 1/n = 5, M = 10000 sine and cosine.pdf Graphic file (
-type pdf)
-<use images/graphics T = 1/n = 5, M = 10000 sine and cosine.pdf>
-Package pdftex.def Info: images/graphics T = 1/n = 5, M = 10000 sine and cosine
-.pdf  used on input line 1669.
-(pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
- [38 <./images/graphics T = 1/n = 5, M = 10 sine and cosine.pdf> <./images/grap
-hics T = 1/n = 5, M = 100 sine and cosine.pdf>] [39 <./images/graphics T = 1/n 
-= 5, M = 1000 sine and cosine.pdf> <./images/graphics T = 1/n = 5, M = 10000 si
-ne and cosine.pdf>]
-Overfull \hbox (5.56342pt too wide) in paragraph at lines 1697--1711
+ [38 <./images/graphs T = 1/n = 5, M = 10 sine and cosine.pdf> <./images/graphs
+ T = 1/n = 5, M = 100 sine and cosine.pdf>] [39 <./images/graphs T = 1/n = 5, M
+ = 1000 sine and cosine.pdf> <./images/graphs T = 1/n = 5, M = 10000 sine and c
+osine.pdf>]
+Overfull \hbox (5.56342pt too wide) in paragraph at lines 1696--1710
  [][] 
  []
 
 
-Overfull \hbox (5.28964pt too wide) in paragraph at lines 1737--1751
+Overfull \hbox (5.28964pt too wide) in paragraph at lines 1736--1750
  [][] 
  []
 
 
-Overfull \hbox (5.28964pt too wide) in paragraph at lines 1777--1791
+Overfull \hbox (5.28964pt too wide) in paragraph at lines 1776--1790
  [][] 
  []
 
 [40]
-Overfull \hbox (5.28964pt too wide) in paragraph at lines 1817--1831
+Overfull \hbox (5.28964pt too wide) in paragraph at lines 1816--1830
  [][] 
  []
 
 
-Overfull \hbox (5.28964pt too wide) in paragraph at lines 1857--1871
+Overfull \hbox (5.28964pt too wide) in paragraph at lines 1856--1870
  [][] 
  []
 
-<images/graphics T = 1/n = 6, M = 1 sine and cosine.pdf, id=1958, 462.52798pt x
- 346.89601pt>
-File: images/graphics T = 1/n = 6, M = 1 sine and cosine.pdf Graphic file (type
- pdf)
-<use images/graphics T = 1/n = 6, M = 1 sine and cosine.pdf>
-Package pdftex.def Info: images/graphics T = 1/n = 6, M = 1 sine and cosine.pdf
-  used on input line 1875.
+<images/graphs T = 1/n = 6, M = 1 sine and cosine.pdf, id=1958, 462.52798pt x 3
+46.89601pt>
+File: images/graphs T = 1/n = 6, M = 1 sine and cosine.pdf Graphic file (type p
+df)
+<use images/graphs T = 1/n = 6, M = 1 sine and cosine.pdf>
+Package pdftex.def Info: images/graphs T = 1/n = 6, M = 1 sine and cosine.pdf  
+used on input line 1874.
 (pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
 [41]
-<images/graphics T = 1/n = 6, M = 10 sine and cosine.pdf, id=1962, 462.52798pt 
+<images/graphs T = 1/n = 6, M = 10 sine and cosine.pdf, id=1962, 462.52798pt x 
+346.89601pt>
+File: images/graphs T = 1/n = 6, M = 10 sine and cosine.pdf Graphic file (type 
+pdf)
+<use images/graphs T = 1/n = 6, M = 10 sine and cosine.pdf>
+Package pdftex.def Info: images/graphs T = 1/n = 6, M = 10 sine and cosine.pdf 
+ used on input line 1878.
+(pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
+<images/graphs T = 1/n = 6, M = 100 sine and cosine.pdf, id=1963, 462.52798pt x
+ 346.89601pt>
+File: images/graphs T = 1/n = 6, M = 100 sine and cosine.pdf Graphic file (type
+ pdf)
+<use images/graphs T = 1/n = 6, M = 100 sine and cosine.pdf>
+Package pdftex.def Info: images/graphs T = 1/n = 6, M = 100 sine and cosine.pdf
+  used on input line 1882.
+(pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
+ [42 <./images/graphs T = 1/n = 6, M = 1 sine and cosine.pdf>]
+<images/graphs T = 1/n = 6, M = 1000 sine and cosine.pdf, id=2018, 462.52798pt 
 x 346.89601pt>
-File: images/graphics T = 1/n = 6, M = 10 sine and cosine.pdf Graphic file (typ
+File: images/graphs T = 1/n = 6, M = 1000 sine and cosine.pdf Graphic file (typ
 e pdf)
-<use images/graphics T = 1/n = 6, M = 10 sine and cosine.pdf>
-Package pdftex.def Info: images/graphics T = 1/n = 6, M = 10 sine and cosine.pd
-f  used on input line 1879.
+<use images/graphs T = 1/n = 6, M = 1000 sine and cosine.pdf>
+Package pdftex.def Info: images/graphs T = 1/n = 6, M = 1000 sine and cosine.pd
+f  used on input line 1886.
 (pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
-<images/graphics T = 1/n = 6, M = 100 sine and cosine.pdf, id=1963, 462.52798pt
+<images/graphs T = 1/n = 6, M = 10000 sine and cosine.pdf, id=2019, 462.52798pt
  x 346.89601pt>
-File: images/graphics T = 1/n = 6, M = 100 sine and cosine.pdf Graphic file (ty
+File: images/graphs T = 1/n = 6, M = 10000 sine and cosine.pdf Graphic file (ty
 pe pdf)
-<use images/graphics T = 1/n = 6, M = 100 sine and cosine.pdf>
-Package pdftex.def Info: images/graphics T = 1/n = 6, M = 100 sine and cosine.p
-df  used on input line 1883.
+<use images/graphs T = 1/n = 6, M = 10000 sine and cosine.pdf>
+Package pdftex.def Info: images/graphs T = 1/n = 6, M = 10000 sine and cosine.p
+df  used on input line 1890.
 (pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
- [42 <./images/graphics T = 1/n = 6, M = 1 sine and cosine.pdf>]
-<images/graphics T = 1/n = 6, M = 1000 sine and cosine.pdf, id=2018, 462.52798p
-t x 346.89601pt>
-File: images/graphics T = 1/n = 6, M = 1000 sine and cosine.pdf Graphic file (t
-ype pdf)
-<use images/graphics T = 1/n = 6, M = 1000 sine and cosine.pdf>
-Package pdftex.def Info: images/graphics T = 1/n = 6, M = 1000 sine and cosine.
-pdf  used on input line 1887.
-(pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
-<images/graphics T = 1/n = 6, M = 10000 sine and cosine.pdf, id=2019, 462.52798
-pt x 346.89601pt>
-File: images/graphics T = 1/n = 6, M = 10000 sine and cosine.pdf Graphic file (
-type pdf)
-<use images/graphics T = 1/n = 6, M = 10000 sine and cosine.pdf>
-Package pdftex.def Info: images/graphics T = 1/n = 6, M = 10000 sine and cosine
-.pdf  used on input line 1891.
-(pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
- [43 <./images/graphics T = 1/n = 6, M = 10 sine and cosine.pdf> <./images/grap
-hics T = 1/n = 6, M = 100 sine and cosine.pdf>] [44 <./images/graphics T = 1/n 
-= 6, M = 1000 sine and cosine.pdf> <./images/graphics T = 1/n = 6, M = 10000 si
-ne and cosine.pdf>]
-Overfull \hbox (9.01323pt too wide) in paragraph at lines 1920--1934
+ [43 <./images/graphs T = 1/n = 6, M = 10 sine and cosine.pdf> <./images/graphs
+ T = 1/n = 6, M = 100 sine and cosine.pdf>] [44 <./images/graphs T = 1/n = 6, M
+ = 1000 sine and cosine.pdf> <./images/graphs T = 1/n = 6, M = 10000 sine and c
+osine.pdf>]
+Overfull \hbox (9.01323pt too wide) in paragraph at lines 1919--1933
  [][] 
  []
 
 
-Overfull \hbox (9.01323pt too wide) in paragraph at lines 1960--1974
+Overfull \hbox (9.01323pt too wide) in paragraph at lines 1959--1973
  [][] 
  []
 
 
-Overfull \hbox (9.01323pt too wide) in paragraph at lines 2000--2014
+Overfull \hbox (9.01323pt too wide) in paragraph at lines 1999--2013
  [][] 
  []
 
 [45]
-Overfull \hbox (9.01323pt too wide) in paragraph at lines 2040--2054
+Overfull \hbox (9.01323pt too wide) in paragraph at lines 2039--2053
  [][] 
  []
 
 
-Overfull \hbox (9.01323pt too wide) in paragraph at lines 2080--2094
+Overfull \hbox (9.01323pt too wide) in paragraph at lines 2079--2093
  [][] 
  []
 
-<images/graphics T = 2/n = 3, M = 1 sine and cosine.pdf, id=2232, 462.52798pt x
- 346.89601pt>
-File: images/graphics T = 2/n = 3, M = 1 sine and cosine.pdf Graphic file (type
- pdf)
-<use images/graphics T = 2/n = 3, M = 1 sine and cosine.pdf>
-Package pdftex.def Info: images/graphics T = 2/n = 3, M = 1 sine and cosine.pdf
-  used on input line 2098.
+<images/graphs T = 2/n = 3, M = 1 sine and cosine.pdf, id=2232, 462.52798pt x 3
+46.89601pt>
+File: images/graphs T = 2/n = 3, M = 1 sine and cosine.pdf Graphic file (type p
+df)
+<use images/graphs T = 2/n = 3, M = 1 sine and cosine.pdf>
+Package pdftex.def Info: images/graphs T = 2/n = 3, M = 1 sine and cosine.pdf  
+used on input line 2097.
 (pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
 [46]
-<images/graphics T = 2/n = 3, M = 10 sine and cosine.pdf, id=2236, 462.52798pt 
+<images/graphs T = 2/n = 3, M = 10 sine and cosine.pdf, id=2236, 462.52798pt x 
+346.89601pt>
+File: images/graphs T = 2/n = 3, M = 10 sine and cosine.pdf Graphic file (type 
+pdf)
+<use images/graphs T = 2/n = 3, M = 10 sine and cosine.pdf>
+Package pdftex.def Info: images/graphs T = 2/n = 3, M = 10 sine and cosine.pdf 
+ used on input line 2101.
+(pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
+<images/graphs T = 2/n = 3, M = 100 sine and cosine.pdf, id=2237, 462.52798pt x
+ 346.89601pt>
+File: images/graphs T = 2/n = 3, M = 100 sine and cosine.pdf Graphic file (type
+ pdf)
+<use images/graphs T = 2/n = 3, M = 100 sine and cosine.pdf>
+Package pdftex.def Info: images/graphs T = 2/n = 3, M = 100 sine and cosine.pdf
+  used on input line 2105.
+(pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
+ [47 <./images/graphs T = 2/n = 3, M = 1 sine and cosine.pdf>]
+<images/graphs T = 2/n = 3, M = 1000 sine and cosine.pdf, id=2291, 462.52798pt 
 x 346.89601pt>
-File: images/graphics T = 2/n = 3, M = 10 sine and cosine.pdf Graphic file (typ
+File: images/graphs T = 2/n = 3, M = 1000 sine and cosine.pdf Graphic file (typ
 e pdf)
-<use images/graphics T = 2/n = 3, M = 10 sine and cosine.pdf>
-Package pdftex.def Info: images/graphics T = 2/n = 3, M = 10 sine and cosine.pd
-f  used on input line 2102.
+<use images/graphs T = 2/n = 3, M = 1000 sine and cosine.pdf>
+Package pdftex.def Info: images/graphs T = 2/n = 3, M = 1000 sine and cosine.pd
+f  used on input line 2109.
 (pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
-<images/graphics T = 2/n = 3, M = 100 sine and cosine.pdf, id=2237, 462.52798pt
+<images/graphs T = 2/n = 3, M = 10000 sine and cosine.pdf, id=2292, 462.52798pt
  x 346.89601pt>
-File: images/graphics T = 2/n = 3, M = 100 sine and cosine.pdf Graphic file (ty
+File: images/graphs T = 2/n = 3, M = 10000 sine and cosine.pdf Graphic file (ty
 pe pdf)
-<use images/graphics T = 2/n = 3, M = 100 sine and cosine.pdf>
-Package pdftex.def Info: images/graphics T = 2/n = 3, M = 100 sine and cosine.p
-df  used on input line 2106.
+<use images/graphs T = 2/n = 3, M = 10000 sine and cosine.pdf>
+Package pdftex.def Info: images/graphs T = 2/n = 3, M = 10000 sine and cosine.p
+df  used on input line 2113.
 (pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
- [47 <./images/graphics T = 2/n = 3, M = 1 sine and cosine.pdf>]
-<images/graphics T = 2/n = 3, M = 1000 sine and cosine.pdf, id=2291, 462.52798p
-t x 346.89601pt>
-File: images/graphics T = 2/n = 3, M = 1000 sine and cosine.pdf Graphic file (t
-ype pdf)
-<use images/graphics T = 2/n = 3, M = 1000 sine and cosine.pdf>
-Package pdftex.def Info: images/graphics T = 2/n = 3, M = 1000 sine and cosine.
-pdf  used on input line 2110.
-(pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
-<images/graphics T = 2/n = 3, M = 10000 sine and cosine.pdf, id=2292, 462.52798
-pt x 346.89601pt>
-File: images/graphics T = 2/n = 3, M = 10000 sine and cosine.pdf Graphic file (
-type pdf)
-<use images/graphics T = 2/n = 3, M = 10000 sine and cosine.pdf>
-Package pdftex.def Info: images/graphics T = 2/n = 3, M = 10000 sine and cosine
-.pdf  used on input line 2114.
-(pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
- [48 <./images/graphics T = 2/n = 3, M = 10 sine and cosine.pdf> <./images/grap
-hics T = 2/n = 3, M = 100 sine and cosine.pdf>] [49 <./images/graphics T = 2/n 
-= 3, M = 1000 sine and cosine.pdf> <./images/graphics T = 2/n = 3, M = 10000 si
-ne and cosine.pdf>]
-Overfull \hbox (9.287pt too wide) in paragraph at lines 2142--2156
+ [48 <./images/graphs T = 2/n = 3, M = 10 sine and cosine.pdf> <./images/graphs
+ T = 2/n = 3, M = 100 sine and cosine.pdf>] [49 <./images/graphs T = 2/n = 3, M
+ = 1000 sine and cosine.pdf> <./images/graphs T = 2/n = 3, M = 10000 sine and c
+osine.pdf>]
+Overfull \hbox (9.287pt too wide) in paragraph at lines 2141--2155
  [][] 
  []
 
 
-Overfull \hbox (9.01323pt too wide) in paragraph at lines 2182--2196
+Overfull \hbox (9.01323pt too wide) in paragraph at lines 2181--2195
  [][] 
  []
 
 
-Overfull \hbox (9.01323pt too wide) in paragraph at lines 2222--2236
+Overfull \hbox (9.01323pt too wide) in paragraph at lines 2221--2235
  [][] 
  []
 
 [50]
-Overfull \hbox (9.01323pt too wide) in paragraph at lines 2262--2276
+Overfull \hbox (9.01323pt too wide) in paragraph at lines 2261--2275
  [][] 
  []
 
 
-Overfull \hbox (9.01323pt too wide) in paragraph at lines 2302--2316
+Overfull \hbox (9.01323pt too wide) in paragraph at lines 2301--2315
  [][] 
  []
 
-<images/graphics T = 2/n = 4, M = 1 sine and cosine.pdf, id=2499, 462.52798pt x
- 346.89601pt>
-File: images/graphics T = 2/n = 4, M = 1 sine and cosine.pdf Graphic file (type
- pdf)
-<use images/graphics T = 2/n = 4, M = 1 sine and cosine.pdf>
-Package pdftex.def Info: images/graphics T = 2/n = 4, M = 1 sine and cosine.pdf
-  used on input line 2320.
+<images/graphs T = 2/n = 4, M = 1 sine and cosine.pdf, id=2499, 462.52798pt x 3
+46.89601pt>
+File: images/graphs T = 2/n = 4, M = 1 sine and cosine.pdf Graphic file (type p
+df)
+<use images/graphs T = 2/n = 4, M = 1 sine and cosine.pdf>
+Package pdftex.def Info: images/graphs T = 2/n = 4, M = 1 sine and cosine.pdf  
+used on input line 2319.
 (pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
 [51]
-<images/graphics T = 2/n = 4, M = 10 sine and cosine.pdf, id=2503, 462.52798pt 
+<images/graphs T = 2/n = 4, M = 10 sine and cosine.pdf, id=2503, 462.52798pt x 
+346.89601pt>
+File: images/graphs T = 2/n = 4, M = 10 sine and cosine.pdf Graphic file (type 
+pdf)
+<use images/graphs T = 2/n = 4, M = 10 sine and cosine.pdf>
+Package pdftex.def Info: images/graphs T = 2/n = 4, M = 10 sine and cosine.pdf 
+ used on input line 2323.
+(pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
+<images/graphs T = 2/n = 4, M = 100 sine and cosine.pdf, id=2504, 462.52798pt x
+ 346.89601pt>
+File: images/graphs T = 2/n = 4, M = 100 sine and cosine.pdf Graphic file (type
+ pdf)
+<use images/graphs T = 2/n = 4, M = 100 sine and cosine.pdf>
+Package pdftex.def Info: images/graphs T = 2/n = 4, M = 100 sine and cosine.pdf
+  used on input line 2327.
+(pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
+ [52 <./images/graphs T = 2/n = 4, M = 1 sine and cosine.pdf>]
+<images/graphs T = 2/n = 4, M = 1000 sine and cosine.pdf, id=2558, 462.52798pt 
 x 346.89601pt>
-File: images/graphics T = 2/n = 4, M = 10 sine and cosine.pdf Graphic file (typ
+File: images/graphs T = 2/n = 4, M = 1000 sine and cosine.pdf Graphic file (typ
 e pdf)
-<use images/graphics T = 2/n = 4, M = 10 sine and cosine.pdf>
-Package pdftex.def Info: images/graphics T = 2/n = 4, M = 10 sine and cosine.pd
-f  used on input line 2324.
+<use images/graphs T = 2/n = 4, M = 1000 sine and cosine.pdf>
+Package pdftex.def Info: images/graphs T = 2/n = 4, M = 1000 sine and cosine.pd
+f  used on input line 2331.
 (pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
-<images/graphics T = 2/n = 4, M = 100 sine and cosine.pdf, id=2504, 462.52798pt
+<images/graphs T = 2/n = 4, M = 10000 sine and cosine.pdf, id=2559, 462.52798pt
  x 346.89601pt>
-File: images/graphics T = 2/n = 4, M = 100 sine and cosine.pdf Graphic file (ty
+File: images/graphs T = 2/n = 4, M = 10000 sine and cosine.pdf Graphic file (ty
 pe pdf)
-<use images/graphics T = 2/n = 4, M = 100 sine and cosine.pdf>
-Package pdftex.def Info: images/graphics T = 2/n = 4, M = 100 sine and cosine.p
-df  used on input line 2328.
+<use images/graphs T = 2/n = 4, M = 10000 sine and cosine.pdf>
+Package pdftex.def Info: images/graphs T = 2/n = 4, M = 10000 sine and cosine.p
+df  used on input line 2335.
 (pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
- [52 <./images/graphics T = 2/n = 4, M = 1 sine and cosine.pdf>]
-<images/graphics T = 2/n = 4, M = 1000 sine and cosine.pdf, id=2558, 462.52798p
-t x 346.89601pt>
-File: images/graphics T = 2/n = 4, M = 1000 sine and cosine.pdf Graphic file (t
-ype pdf)
-<use images/graphics T = 2/n = 4, M = 1000 sine and cosine.pdf>
-Package pdftex.def Info: images/graphics T = 2/n = 4, M = 1000 sine and cosine.
-pdf  used on input line 2332.
-(pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
-<images/graphics T = 2/n = 4, M = 10000 sine and cosine.pdf, id=2559, 462.52798
-pt x 346.89601pt>
-File: images/graphics T = 2/n = 4, M = 10000 sine and cosine.pdf Graphic file (
-type pdf)
-<use images/graphics T = 2/n = 4, M = 10000 sine and cosine.pdf>
-Package pdftex.def Info: images/graphics T = 2/n = 4, M = 10000 sine and cosine
-.pdf  used on input line 2336.
-(pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
- [53 <./images/graphics T = 2/n = 4, M = 10 sine and cosine.pdf> <./images/grap
-hics T = 2/n = 4, M = 100 sine and cosine.pdf>] [54 <./images/graphics T = 2/n 
-= 4, M = 1000 sine and cosine.pdf> <./images/graphics T = 2/n = 4, M = 10000 si
-ne and cosine.pdf>]
-Overfull \hbox (9.287pt too wide) in paragraph at lines 2364--2378
+ [53 <./images/graphs T = 2/n = 4, M = 10 sine and cosine.pdf> <./images/graphs
+ T = 2/n = 4, M = 100 sine and cosine.pdf>] [54 <./images/graphs T = 2/n = 4, M
+ = 1000 sine and cosine.pdf> <./images/graphs T = 2/n = 4, M = 10000 sine and c
+osine.pdf>]
+Overfull \hbox (9.287pt too wide) in paragraph at lines 2363--2377
  [][] 
  []
 
 
-Overfull \hbox (9.01323pt too wide) in paragraph at lines 2404--2418
+Overfull \hbox (9.01323pt too wide) in paragraph at lines 2403--2417
  [][] 
  []
 
 
-Overfull \hbox (9.01323pt too wide) in paragraph at lines 2444--2458
+Overfull \hbox (9.01323pt too wide) in paragraph at lines 2443--2457
  [][] 
  []
 
 [55]
-Overfull \hbox (9.01323pt too wide) in paragraph at lines 2484--2498
+Overfull \hbox (9.01323pt too wide) in paragraph at lines 2483--2497
  [][] 
  []
 
 
-Overfull \hbox (9.01323pt too wide) in paragraph at lines 2524--2538
+Overfull \hbox (9.01323pt too wide) in paragraph at lines 2523--2537
  [][] 
  []
 
-<images/graphics T = 2/n = 5, M = 1 sine and cosine.pdf, id=2769, 462.52798pt x
- 346.89601pt>
-File: images/graphics T = 2/n = 5, M = 1 sine and cosine.pdf Graphic file (type
- pdf)
-<use images/graphics T = 2/n = 5, M = 1 sine and cosine.pdf>
-Package pdftex.def Info: images/graphics T = 2/n = 5, M = 1 sine and cosine.pdf
-  used on input line 2542.
+<images/graphs T = 2/n = 5, M = 1 sine and cosine.pdf, id=2769, 462.52798pt x 3
+46.89601pt>
+File: images/graphs T = 2/n = 5, M = 1 sine and cosine.pdf Graphic file (type p
+df)
+<use images/graphs T = 2/n = 5, M = 1 sine and cosine.pdf>
+Package pdftex.def Info: images/graphs T = 2/n = 5, M = 1 sine and cosine.pdf  
+used on input line 2541.
 (pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
 [56]
-<images/graphics T = 2/n = 5, M = 10 sine and cosine.pdf, id=2773, 462.52798pt 
+<images/graphs T = 2/n = 5, M = 10 sine and cosine.pdf, id=2773, 462.52798pt x 
+346.89601pt>
+File: images/graphs T = 2/n = 5, M = 10 sine and cosine.pdf Graphic file (type 
+pdf)
+<use images/graphs T = 2/n = 5, M = 10 sine and cosine.pdf>
+Package pdftex.def Info: images/graphs T = 2/n = 5, M = 10 sine and cosine.pdf 
+ used on input line 2545.
+(pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
+<images/graphs T = 2/n = 5, M = 100 sine and cosine.pdf, id=2774, 462.52798pt x
+ 346.89601pt>
+File: images/graphs T = 2/n = 5, M = 100 sine and cosine.pdf Graphic file (type
+ pdf)
+<use images/graphs T = 2/n = 5, M = 100 sine and cosine.pdf>
+Package pdftex.def Info: images/graphs T = 2/n = 5, M = 100 sine and cosine.pdf
+  used on input line 2549.
+(pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
+ [57 <./images/graphs T = 2/n = 5, M = 1 sine and cosine.pdf>]
+<images/graphs T = 2/n = 5, M = 1000 sine and cosine.pdf, id=2828, 462.52798pt 
 x 346.89601pt>
-File: images/graphics T = 2/n = 5, M = 10 sine and cosine.pdf Graphic file (typ
+File: images/graphs T = 2/n = 5, M = 1000 sine and cosine.pdf Graphic file (typ
 e pdf)
-<use images/graphics T = 2/n = 5, M = 10 sine and cosine.pdf>
-Package pdftex.def Info: images/graphics T = 2/n = 5, M = 10 sine and cosine.pd
-f  used on input line 2546.
+<use images/graphs T = 2/n = 5, M = 1000 sine and cosine.pdf>
+Package pdftex.def Info: images/graphs T = 2/n = 5, M = 1000 sine and cosine.pd
+f  used on input line 2553.
 (pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
-<images/graphics T = 2/n = 5, M = 100 sine and cosine.pdf, id=2774, 462.52798pt
+<images/graphs T = 2/n = 5, M = 10000 sine and cosine.pdf, id=2829, 462.52798pt
  x 346.89601pt>
-File: images/graphics T = 2/n = 5, M = 100 sine and cosine.pdf Graphic file (ty
+File: images/graphs T = 2/n = 5, M = 10000 sine and cosine.pdf Graphic file (ty
 pe pdf)
-<use images/graphics T = 2/n = 5, M = 100 sine and cosine.pdf>
-Package pdftex.def Info: images/graphics T = 2/n = 5, M = 100 sine and cosine.p
-df  used on input line 2550.
+<use images/graphs T = 2/n = 5, M = 10000 sine and cosine.pdf>
+Package pdftex.def Info: images/graphs T = 2/n = 5, M = 10000 sine and cosine.p
+df  used on input line 2557.
 (pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
- [57 <./images/graphics T = 2/n = 5, M = 1 sine and cosine.pdf>]
-<images/graphics T = 2/n = 5, M = 1000 sine and cosine.pdf, id=2828, 462.52798p
-t x 346.89601pt>
-File: images/graphics T = 2/n = 5, M = 1000 sine and cosine.pdf Graphic file (t
-ype pdf)
-<use images/graphics T = 2/n = 5, M = 1000 sine and cosine.pdf>
-Package pdftex.def Info: images/graphics T = 2/n = 5, M = 1000 sine and cosine.
-pdf  used on input line 2554.
-(pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
-<images/graphics T = 2/n = 5, M = 10000 sine and cosine.pdf, id=2829, 462.52798
-pt x 346.89601pt>
-File: images/graphics T = 2/n = 5, M = 10000 sine and cosine.pdf Graphic file (
-type pdf)
-<use images/graphics T = 2/n = 5, M = 10000 sine and cosine.pdf>
-Package pdftex.def Info: images/graphics T = 2/n = 5, M = 10000 sine and cosine
-.pdf  used on input line 2558.
-(pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
- [58 <./images/graphics T = 2/n = 5, M = 10 sine and cosine.pdf> <./images/grap
-hics T = 2/n = 5, M = 100 sine and cosine.pdf>] [59 <./images/graphics T = 2/n 
-= 5, M = 1000 sine and cosine.pdf> <./images/graphics T = 2/n = 5, M = 10000 si
-ne and cosine.pdf>]
-Overfull \hbox (9.287pt too wide) in paragraph at lines 2586--2600
+ [58 <./images/graphs T = 2/n = 5, M = 10 sine and cosine.pdf> <./images/graphs
+ T = 2/n = 5, M = 100 sine and cosine.pdf>] [59 <./images/graphs T = 2/n = 5, M
+ = 1000 sine and cosine.pdf> <./images/graphs T = 2/n = 5, M = 10000 sine and c
+osine.pdf>]
+Overfull \hbox (9.287pt too wide) in paragraph at lines 2585--2599
  [][] 
  []
 
 
-Overfull \hbox (9.01323pt too wide) in paragraph at lines 2626--2640
+Overfull \hbox (9.01323pt too wide) in paragraph at lines 2625--2639
  [][] 
  []
 
 
-Overfull \hbox (9.01323pt too wide) in paragraph at lines 2666--2680
+Overfull \hbox (9.01323pt too wide) in paragraph at lines 2665--2679
  [][] 
  []
 
 [60]
-Overfull \hbox (9.01323pt too wide) in paragraph at lines 2706--2720
+Overfull \hbox (9.01323pt too wide) in paragraph at lines 2705--2719
  [][] 
  []
 
 
-Overfull \hbox (9.01323pt too wide) in paragraph at lines 2746--2760
+Overfull \hbox (9.01323pt too wide) in paragraph at lines 2745--2759
  [][] 
  []
 
-<images/graphics T = 2/n = 6, M = 1 sine and cosine.pdf, id=3035, 462.52798pt x
- 346.89601pt>
-File: images/graphics T = 2/n = 6, M = 1 sine and cosine.pdf Graphic file (type
- pdf)
-<use images/graphics T = 2/n = 6, M = 1 sine and cosine.pdf>
-Package pdftex.def Info: images/graphics T = 2/n = 6, M = 1 sine and cosine.pdf
-  used on input line 2764.
+<images/graphs T = 2/n = 6, M = 1 sine and cosine.pdf, id=3035, 462.52798pt x 3
+46.89601pt>
+File: images/graphs T = 2/n = 6, M = 1 sine and cosine.pdf Graphic file (type p
+df)
+<use images/graphs T = 2/n = 6, M = 1 sine and cosine.pdf>
+Package pdftex.def Info: images/graphs T = 2/n = 6, M = 1 sine and cosine.pdf  
+used on input line 2763.
 (pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
 [61]
-<images/graphics T = 2/n = 6, M = 10 sine and cosine.pdf, id=3040, 462.52798pt 
+<images/graphs T = 2/n = 6, M = 10 sine and cosine.pdf, id=3040, 462.52798pt x 
+346.89601pt>
+File: images/graphs T = 2/n = 6, M = 10 sine and cosine.pdf Graphic file (type 
+pdf)
+<use images/graphs T = 2/n = 6, M = 10 sine and cosine.pdf>
+Package pdftex.def Info: images/graphs T = 2/n = 6, M = 10 sine and cosine.pdf 
+ used on input line 2767.
+(pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
+<images/graphs T = 2/n = 6, M = 100 sine and cosine.pdf, id=3041, 462.52798pt x
+ 346.89601pt>
+File: images/graphs T = 2/n = 6, M = 100 sine and cosine.pdf Graphic file (type
+ pdf)
+<use images/graphs T = 2/n = 6, M = 100 sine and cosine.pdf>
+Package pdftex.def Info: images/graphs T = 2/n = 6, M = 100 sine and cosine.pdf
+  used on input line 2771.
+(pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
+ [62 <./images/graphs T = 2/n = 6, M = 1 sine and cosine.pdf>]
+<images/graphs T = 2/n = 6, M = 1000 sine and cosine.pdf, id=3095, 462.52798pt 
 x 346.89601pt>
-File: images/graphics T = 2/n = 6, M = 10 sine and cosine.pdf Graphic file (typ
+File: images/graphs T = 2/n = 6, M = 1000 sine and cosine.pdf Graphic file (typ
 e pdf)
-<use images/graphics T = 2/n = 6, M = 10 sine and cosine.pdf>
-Package pdftex.def Info: images/graphics T = 2/n = 6, M = 10 sine and cosine.pd
-f  used on input line 2768.
+<use images/graphs T = 2/n = 6, M = 1000 sine and cosine.pdf>
+Package pdftex.def Info: images/graphs T = 2/n = 6, M = 1000 sine and cosine.pd
+f  used on input line 2775.
 (pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
-<images/graphics T = 2/n = 6, M = 100 sine and cosine.pdf, id=3041, 462.52798pt
+<images/graphs T = 2/n = 6, M = 10000 sine and cosine.pdf, id=3096, 462.52798pt
  x 346.89601pt>
-File: images/graphics T = 2/n = 6, M = 100 sine and cosine.pdf Graphic file (ty
+File: images/graphs T = 2/n = 6, M = 10000 sine and cosine.pdf Graphic file (ty
 pe pdf)
-<use images/graphics T = 2/n = 6, M = 100 sine and cosine.pdf>
-Package pdftex.def Info: images/graphics T = 2/n = 6, M = 100 sine and cosine.p
-df  used on input line 2772.
+<use images/graphs T = 2/n = 6, M = 10000 sine and cosine.pdf>
+Package pdftex.def Info: images/graphs T = 2/n = 6, M = 10000 sine and cosine.p
+df  used on input line 2779.
 (pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
- [62 <./images/graphics T = 2/n = 6, M = 1 sine and cosine.pdf>]
-<images/graphics T = 2/n = 6, M = 1000 sine and cosine.pdf, id=3095, 462.52798p
-t x 346.89601pt>
-File: images/graphics T = 2/n = 6, M = 1000 sine and cosine.pdf Graphic file (t
-ype pdf)
-<use images/graphics T = 2/n = 6, M = 1000 sine and cosine.pdf>
-Package pdftex.def Info: images/graphics T = 2/n = 6, M = 1000 sine and cosine.
-pdf  used on input line 2776.
-(pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
-<images/graphics T = 2/n = 6, M = 10000 sine and cosine.pdf, id=3096, 462.52798
-pt x 346.89601pt>
-File: images/graphics T = 2/n = 6, M = 10000 sine and cosine.pdf Graphic file (
-type pdf)
-<use images/graphics T = 2/n = 6, M = 10000 sine and cosine.pdf>
-Package pdftex.def Info: images/graphics T = 2/n = 6, M = 10000 sine and cosine
-.pdf  used on input line 2780.
-(pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
- [63 <./images/graphics T = 2/n = 6, M = 10 sine and cosine.pdf> <./images/grap
-hics T = 2/n = 6, M = 100 sine and cosine.pdf>] [64 <./images/graphics T = 2/n 
-= 6, M = 1000 sine and cosine.pdf> <./images/graphics T = 2/n = 6, M = 10000 si
-ne and cosine.pdf>]
-Overfull \hbox (18.4856pt too wide) in paragraph at lines 2809--2823
+ [63 <./images/graphs T = 2/n = 6, M = 10 sine and cosine.pdf> <./images/graphs
+ T = 2/n = 6, M = 100 sine and cosine.pdf>] [64 <./images/graphs T = 2/n = 6, M
+ = 1000 sine and cosine.pdf> <./images/graphs T = 2/n = 6, M = 10000 sine and c
+osine.pdf>]
+Overfull \hbox (18.4856pt too wide) in paragraph at lines 2808--2822
  [][] 
  []
 
 
-Overfull \hbox (18.21182pt too wide) in paragraph at lines 2849--2863
+Overfull \hbox (18.21182pt too wide) in paragraph at lines 2848--2862
  [][] 
  []
 
 
-Overfull \hbox (18.21182pt too wide) in paragraph at lines 2889--2903
+Overfull \hbox (18.21182pt too wide) in paragraph at lines 2888--2902
  [][] 
  []
 
 [65]
-Overfull \hbox (18.21182pt too wide) in paragraph at lines 2929--2943
+Overfull \hbox (18.21182pt too wide) in paragraph at lines 2928--2942
  [][] 
  []
 
 
-Overfull \hbox (18.21182pt too wide) in paragraph at lines 2969--2983
+Overfull \hbox (18.21182pt too wide) in paragraph at lines 2968--2982
  [][] 
  []
 
-<images/graphics T = 4/n = 3, M = 1 sine and cosine.pdf, id=3305, 462.52798pt x
- 346.89601pt>
-File: images/graphics T = 4/n = 3, M = 1 sine and cosine.pdf Graphic file (type
- pdf)
-<use images/graphics T = 4/n = 3, M = 1 sine and cosine.pdf>
-Package pdftex.def Info: images/graphics T = 4/n = 3, M = 1 sine and cosine.pdf
-  used on input line 2987.
+<images/graphs T = 4/n = 3, M = 1 sine and cosine.pdf, id=3305, 462.52798pt x 3
+46.89601pt>
+File: images/graphs T = 4/n = 3, M = 1 sine and cosine.pdf Graphic file (type p
+df)
+<use images/graphs T = 4/n = 3, M = 1 sine and cosine.pdf>
+Package pdftex.def Info: images/graphs T = 4/n = 3, M = 1 sine and cosine.pdf  
+used on input line 2986.
 (pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
 [66]
-<images/graphics T = 4/n = 3, M = 10 sine and cosine.pdf, id=3309, 462.52798pt 
+<images/graphs T = 4/n = 3, M = 10 sine and cosine.pdf, id=3309, 462.52798pt x 
+346.89601pt>
+File: images/graphs T = 4/n = 3, M = 10 sine and cosine.pdf Graphic file (type 
+pdf)
+<use images/graphs T = 4/n = 3, M = 10 sine and cosine.pdf>
+Package pdftex.def Info: images/graphs T = 4/n = 3, M = 10 sine and cosine.pdf 
+ used on input line 2990.
+(pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
+<images/graphs T = 4/n = 3, M = 100 sine and cosine.pdf, id=3310, 462.52798pt x
+ 346.89601pt>
+File: images/graphs T = 4/n = 3, M = 100 sine and cosine.pdf Graphic file (type
+ pdf)
+<use images/graphs T = 4/n = 3, M = 100 sine and cosine.pdf>
+Package pdftex.def Info: images/graphs T = 4/n = 3, M = 100 sine and cosine.pdf
+  used on input line 2994.
+(pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
+ [67 <./images/graphs T = 4/n = 3, M = 1 sine and cosine.pdf>]
+<images/graphs T = 4/n = 3, M = 1000 sine and cosine.pdf, id=3366, 462.52798pt 
 x 346.89601pt>
-File: images/graphics T = 4/n = 3, M = 10 sine and cosine.pdf Graphic file (typ
+File: images/graphs T = 4/n = 3, M = 1000 sine and cosine.pdf Graphic file (typ
 e pdf)
-<use images/graphics T = 4/n = 3, M = 10 sine and cosine.pdf>
-Package pdftex.def Info: images/graphics T = 4/n = 3, M = 10 sine and cosine.pd
-f  used on input line 2991.
+<use images/graphs T = 4/n = 3, M = 1000 sine and cosine.pdf>
+Package pdftex.def Info: images/graphs T = 4/n = 3, M = 1000 sine and cosine.pd
+f  used on input line 2998.
 (pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
-<images/graphics T = 4/n = 3, M = 100 sine and cosine.pdf, id=3310, 462.52798pt
+<images/graphs T = 4/n = 3, M = 10000 sine and cosine.pdf, id=3367, 462.52798pt
  x 346.89601pt>
-File: images/graphics T = 4/n = 3, M = 100 sine and cosine.pdf Graphic file (ty
+File: images/graphs T = 4/n = 3, M = 10000 sine and cosine.pdf Graphic file (ty
 pe pdf)
-<use images/graphics T = 4/n = 3, M = 100 sine and cosine.pdf>
-Package pdftex.def Info: images/graphics T = 4/n = 3, M = 100 sine and cosine.p
-df  used on input line 2995.
+<use images/graphs T = 4/n = 3, M = 10000 sine and cosine.pdf>
+Package pdftex.def Info: images/graphs T = 4/n = 3, M = 10000 sine and cosine.p
+df  used on input line 3002.
 (pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
- [67 <./images/graphics T = 4/n = 3, M = 1 sine and cosine.pdf>]
-<images/graphics T = 4/n = 3, M = 1000 sine and cosine.pdf, id=3366, 462.52798p
-t x 346.89601pt>
-File: images/graphics T = 4/n = 3, M = 1000 sine and cosine.pdf Graphic file (t
-ype pdf)
-<use images/graphics T = 4/n = 3, M = 1000 sine and cosine.pdf>
-Package pdftex.def Info: images/graphics T = 4/n = 3, M = 1000 sine and cosine.
-pdf  used on input line 2999.
-(pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
-<images/graphics T = 4/n = 3, M = 10000 sine and cosine.pdf, id=3367, 462.52798
-pt x 346.89601pt>
-File: images/graphics T = 4/n = 3, M = 10000 sine and cosine.pdf Graphic file (
-type pdf)
-<use images/graphics T = 4/n = 3, M = 10000 sine and cosine.pdf>
-Package pdftex.def Info: images/graphics T = 4/n = 3, M = 10000 sine and cosine
-.pdf  used on input line 3003.
-(pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
- [68 <./images/graphics T = 4/n = 3, M = 10 sine and cosine.pdf> <./images/grap
-hics T = 4/n = 3, M = 100 sine and cosine.pdf>] [69 <./images/graphics T = 4/n 
-= 3, M = 1000 sine and cosine.pdf> <./images/graphics T = 4/n = 3, M = 10000 si
-ne and cosine.pdf>]
-Overfull \hbox (18.4856pt too wide) in paragraph at lines 3031--3045
+ [68 <./images/graphs T = 4/n = 3, M = 10 sine and cosine.pdf> <./images/graphs
+ T = 4/n = 3, M = 100 sine and cosine.pdf>] [69 <./images/graphs T = 4/n = 3, M
+ = 1000 sine and cosine.pdf> <./images/graphs T = 4/n = 3, M = 10000 sine and c
+osine.pdf>]
+Overfull \hbox (18.4856pt too wide) in paragraph at lines 3030--3044
  [][] 
  []
 
 
-Overfull \hbox (18.21182pt too wide) in paragraph at lines 3071--3085
+Overfull \hbox (18.21182pt too wide) in paragraph at lines 3070--3084
  [][] 
  []
 
 
-Overfull \hbox (18.21182pt too wide) in paragraph at lines 3111--3125
+Overfull \hbox (18.21182pt too wide) in paragraph at lines 3110--3124
  [][] 
  []
 
 [70]
-Overfull \hbox (18.21182pt too wide) in paragraph at lines 3151--3165
+Overfull \hbox (18.21182pt too wide) in paragraph at lines 3150--3164
  [][] 
  []
 
 
-Overfull \hbox (18.21182pt too wide) in paragraph at lines 3191--3205
+Overfull \hbox (18.21182pt too wide) in paragraph at lines 3190--3204
  [][] 
  []
 
-<images/graphics T = 4/n = 4, M = 1 sine and cosine.pdf, id=3581, 462.52798pt x
- 346.89601pt>
-File: images/graphics T = 4/n = 4, M = 1 sine and cosine.pdf Graphic file (type
- pdf)
-<use images/graphics T = 4/n = 4, M = 1 sine and cosine.pdf>
-Package pdftex.def Info: images/graphics T = 4/n = 4, M = 1 sine and cosine.pdf
-  used on input line 3209.
+<images/graphs T = 4/n = 4, M = 1 sine and cosine.pdf, id=3581, 462.52798pt x 3
+46.89601pt>
+File: images/graphs T = 4/n = 4, M = 1 sine and cosine.pdf Graphic file (type p
+df)
+<use images/graphs T = 4/n = 4, M = 1 sine and cosine.pdf>
+Package pdftex.def Info: images/graphs T = 4/n = 4, M = 1 sine and cosine.pdf  
+used on input line 3208.
 (pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
 [71]
-<images/graphics T = 4/n = 4, M = 10 sine and cosine.pdf, id=3585, 462.52798pt 
+<images/graphs T = 4/n = 4, M = 10 sine and cosine.pdf, id=3585, 462.52798pt x 
+346.89601pt>
+File: images/graphs T = 4/n = 4, M = 10 sine and cosine.pdf Graphic file (type 
+pdf)
+<use images/graphs T = 4/n = 4, M = 10 sine and cosine.pdf>
+Package pdftex.def Info: images/graphs T = 4/n = 4, M = 10 sine and cosine.pdf 
+ used on input line 3212.
+(pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
+<images/graphs T = 4/n = 4, M = 100 sine and cosine.pdf, id=3586, 462.52798pt x
+ 346.89601pt>
+File: images/graphs T = 4/n = 4, M = 100 sine and cosine.pdf Graphic file (type
+ pdf)
+<use images/graphs T = 4/n = 4, M = 100 sine and cosine.pdf>
+Package pdftex.def Info: images/graphs T = 4/n = 4, M = 100 sine and cosine.pdf
+  used on input line 3216.
+(pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
+ [72 <./images/graphs T = 4/n = 4, M = 1 sine and cosine.pdf>]
+<images/graphs T = 4/n = 4, M = 1000 sine and cosine.pdf, id=3641, 462.52798pt 
 x 346.89601pt>
-File: images/graphics T = 4/n = 4, M = 10 sine and cosine.pdf Graphic file (typ
+File: images/graphs T = 4/n = 4, M = 1000 sine and cosine.pdf Graphic file (typ
 e pdf)
-<use images/graphics T = 4/n = 4, M = 10 sine and cosine.pdf>
-Package pdftex.def Info: images/graphics T = 4/n = 4, M = 10 sine and cosine.pd
-f  used on input line 3213.
+<use images/graphs T = 4/n = 4, M = 1000 sine and cosine.pdf>
+Package pdftex.def Info: images/graphs T = 4/n = 4, M = 1000 sine and cosine.pd
+f  used on input line 3220.
 (pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
-<images/graphics T = 4/n = 4, M = 100 sine and cosine.pdf, id=3586, 462.52798pt
+<images/graphs T = 4/n = 4, M = 10000 sine and cosine.pdf, id=3642, 462.52798pt
  x 346.89601pt>
-File: images/graphics T = 4/n = 4, M = 100 sine and cosine.pdf Graphic file (ty
+File: images/graphs T = 4/n = 4, M = 10000 sine and cosine.pdf Graphic file (ty
 pe pdf)
-<use images/graphics T = 4/n = 4, M = 100 sine and cosine.pdf>
-Package pdftex.def Info: images/graphics T = 4/n = 4, M = 100 sine and cosine.p
-df  used on input line 3217.
+<use images/graphs T = 4/n = 4, M = 10000 sine and cosine.pdf>
+Package pdftex.def Info: images/graphs T = 4/n = 4, M = 10000 sine and cosine.p
+df  used on input line 3224.
 (pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
- [72 <./images/graphics T = 4/n = 4, M = 1 sine and cosine.pdf>]
-<images/graphics T = 4/n = 4, M = 1000 sine and cosine.pdf, id=3641, 462.52798p
-t x 346.89601pt>
-File: images/graphics T = 4/n = 4, M = 1000 sine and cosine.pdf Graphic file (t
-ype pdf)
-<use images/graphics T = 4/n = 4, M = 1000 sine and cosine.pdf>
-Package pdftex.def Info: images/graphics T = 4/n = 4, M = 1000 sine and cosine.
-pdf  used on input line 3221.
-(pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
-<images/graphics T = 4/n = 4, M = 10000 sine and cosine.pdf, id=3642, 462.52798
-pt x 346.89601pt>
-File: images/graphics T = 4/n = 4, M = 10000 sine and cosine.pdf Graphic file (
-type pdf)
-<use images/graphics T = 4/n = 4, M = 10000 sine and cosine.pdf>
-Package pdftex.def Info: images/graphics T = 4/n = 4, M = 10000 sine and cosine
-.pdf  used on input line 3225.
-(pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
- [73 <./images/graphics T = 4/n = 4, M = 10 sine and cosine.pdf> <./images/grap
-hics T = 4/n = 4, M = 100 sine and cosine.pdf>] [74 <./images/graphics T = 4/n 
-= 4, M = 1000 sine and cosine.pdf> <./images/graphics T = 4/n = 4, M = 10000 si
-ne and cosine.pdf>]
-Overfull \hbox (18.4856pt too wide) in paragraph at lines 3253--3267
+ [73 <./images/graphs T = 4/n = 4, M = 10 sine and cosine.pdf> <./images/graphs
+ T = 4/n = 4, M = 100 sine and cosine.pdf>] [74 <./images/graphs T = 4/n = 4, M
+ = 1000 sine and cosine.pdf> <./images/graphs T = 4/n = 4, M = 10000 sine and c
+osine.pdf>]
+Overfull \hbox (18.4856pt too wide) in paragraph at lines 3252--3266
  [][] 
  []
 
 
-Overfull \hbox (18.21182pt too wide) in paragraph at lines 3293--3307
+Overfull \hbox (18.21182pt too wide) in paragraph at lines 3292--3306
  [][] 
  []
 
 
-Overfull \hbox (18.21182pt too wide) in paragraph at lines 3333--3347
+Overfull \hbox (18.21182pt too wide) in paragraph at lines 3332--3346
  [][] 
  []
 
 [75]
-Overfull \hbox (18.21182pt too wide) in paragraph at lines 3373--3387
+Overfull \hbox (18.21182pt too wide) in paragraph at lines 3372--3386
  [][] 
  []
 
 
-Overfull \hbox (18.21182pt too wide) in paragraph at lines 3413--3427
+Overfull \hbox (18.21182pt too wide) in paragraph at lines 3412--3426
  [][] 
  []
 
-<images/graphics T = 4/n = 5, M = 1 sine and cosine.pdf, id=3858, 462.52798pt x
- 346.89601pt>
-File: images/graphics T = 4/n = 5, M = 1 sine and cosine.pdf Graphic file (type
- pdf)
-<use images/graphics T = 4/n = 5, M = 1 sine and cosine.pdf>
-Package pdftex.def Info: images/graphics T = 4/n = 5, M = 1 sine and cosine.pdf
-  used on input line 3431.
+<images/graphs T = 4/n = 5, M = 1 sine and cosine.pdf, id=3858, 462.52798pt x 3
+46.89601pt>
+File: images/graphs T = 4/n = 5, M = 1 sine and cosine.pdf Graphic file (type p
+df)
+<use images/graphs T = 4/n = 5, M = 1 sine and cosine.pdf>
+Package pdftex.def Info: images/graphs T = 4/n = 5, M = 1 sine and cosine.pdf  
+used on input line 3430.
 (pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
 [76]
-<images/graphics T = 4/n = 5, M = 10 sine and cosine.pdf, id=3862, 462.52798pt 
+<images/graphs T = 4/n = 5, M = 10 sine and cosine.pdf, id=3862, 462.52798pt x 
+346.89601pt>
+File: images/graphs T = 4/n = 5, M = 10 sine and cosine.pdf Graphic file (type 
+pdf)
+<use images/graphs T = 4/n = 5, M = 10 sine and cosine.pdf>
+Package pdftex.def Info: images/graphs T = 4/n = 5, M = 10 sine and cosine.pdf 
+ used on input line 3434.
+(pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
+<images/graphs T = 4/n = 5, M = 100 sine and cosine.pdf, id=3863, 462.52798pt x
+ 346.89601pt>
+File: images/graphs T = 4/n = 5, M = 100 sine and cosine.pdf Graphic file (type
+ pdf)
+<use images/graphs T = 4/n = 5, M = 100 sine and cosine.pdf>
+Package pdftex.def Info: images/graphs T = 4/n = 5, M = 100 sine and cosine.pdf
+  used on input line 3438.
+(pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
+ [77 <./images/graphs T = 4/n = 5, M = 1 sine and cosine.pdf>]
+<images/graphs T = 4/n = 5, M = 1000 sine and cosine.pdf, id=3918, 462.52798pt 
 x 346.89601pt>
-File: images/graphics T = 4/n = 5, M = 10 sine and cosine.pdf Graphic file (typ
+File: images/graphs T = 4/n = 5, M = 1000 sine and cosine.pdf Graphic file (typ
 e pdf)
-<use images/graphics T = 4/n = 5, M = 10 sine and cosine.pdf>
-Package pdftex.def Info: images/graphics T = 4/n = 5, M = 10 sine and cosine.pd
-f  used on input line 3435.
+<use images/graphs T = 4/n = 5, M = 1000 sine and cosine.pdf>
+Package pdftex.def Info: images/graphs T = 4/n = 5, M = 1000 sine and cosine.pd
+f  used on input line 3442.
 (pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
-<images/graphics T = 4/n = 5, M = 100 sine and cosine.pdf, id=3863, 462.52798pt
+<images/graphs T = 4/n = 5, M = 10000 sine and cosine.pdf, id=3919, 462.52798pt
  x 346.89601pt>
-File: images/graphics T = 4/n = 5, M = 100 sine and cosine.pdf Graphic file (ty
+File: images/graphs T = 4/n = 5, M = 10000 sine and cosine.pdf Graphic file (ty
 pe pdf)
-<use images/graphics T = 4/n = 5, M = 100 sine and cosine.pdf>
-Package pdftex.def Info: images/graphics T = 4/n = 5, M = 100 sine and cosine.p
-df  used on input line 3439.
+<use images/graphs T = 4/n = 5, M = 10000 sine and cosine.pdf>
+Package pdftex.def Info: images/graphs T = 4/n = 5, M = 10000 sine and cosine.p
+df  used on input line 3446.
 (pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
- [77 <./images/graphics T = 4/n = 5, M = 1 sine and cosine.pdf>]
-<images/graphics T = 4/n = 5, M = 1000 sine and cosine.pdf, id=3918, 462.52798p
-t x 346.89601pt>
-File: images/graphics T = 4/n = 5, M = 1000 sine and cosine.pdf Graphic file (t
-ype pdf)
-<use images/graphics T = 4/n = 5, M = 1000 sine and cosine.pdf>
-Package pdftex.def Info: images/graphics T = 4/n = 5, M = 1000 sine and cosine.
-pdf  used on input line 3443.
-(pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
-<images/graphics T = 4/n = 5, M = 10000 sine and cosine.pdf, id=3919, 462.52798
-pt x 346.89601pt>
-File: images/graphics T = 4/n = 5, M = 10000 sine and cosine.pdf Graphic file (
-type pdf)
-<use images/graphics T = 4/n = 5, M = 10000 sine and cosine.pdf>
-Package pdftex.def Info: images/graphics T = 4/n = 5, M = 10000 sine and cosine
-.pdf  used on input line 3447.
-(pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
- [78 <./images/graphics T = 4/n = 5, M = 10 sine and cosine.pdf> <./images/grap
-hics T = 4/n = 5, M = 100 sine and cosine.pdf>] [79 <./images/graphics T = 4/n 
-= 5, M = 1000 sine and cosine.pdf> <./images/graphics T = 4/n = 5, M = 10000 si
-ne and cosine.pdf>]
-Overfull \hbox (18.4856pt too wide) in paragraph at lines 3475--3489
+ [78 <./images/graphs T = 4/n = 5, M = 10 sine and cosine.pdf> <./images/graphs
+ T = 4/n = 5, M = 100 sine and cosine.pdf>] [79 <./images/graphs T = 4/n = 5, M
+ = 1000 sine and cosine.pdf> <./images/graphs T = 4/n = 5, M = 10000 sine and c
+osine.pdf>]
+Overfull \hbox (18.4856pt too wide) in paragraph at lines 3474--3488
  [][] 
  []
 
 
-Overfull \hbox (18.4856pt too wide) in paragraph at lines 3515--3529
+Overfull \hbox (18.4856pt too wide) in paragraph at lines 3514--3528
  [][] 
  []
 
 
-Overfull \hbox (18.21182pt too wide) in paragraph at lines 3555--3569
+Overfull \hbox (18.21182pt too wide) in paragraph at lines 3554--3568
  [][] 
  []
 
 [80]
-Overfull \hbox (18.21182pt too wide) in paragraph at lines 3595--3609
+Overfull \hbox (18.21182pt too wide) in paragraph at lines 3594--3608
  [][] 
  []
 
 
-Overfull \hbox (18.21182pt too wide) in paragraph at lines 3635--3649
+Overfull \hbox (18.21182pt too wide) in paragraph at lines 3634--3648
  [][] 
  []
 
-<images/graphics T = 4/n = 6, M = 1 sine and cosine.pdf, id=4137, 462.52798pt x
- 346.89601pt>
-File: images/graphics T = 4/n = 6, M = 1 sine and cosine.pdf Graphic file (type
- pdf)
-<use images/graphics T = 4/n = 6, M = 1 sine and cosine.pdf>
-Package pdftex.def Info: images/graphics T = 4/n = 6, M = 1 sine and cosine.pdf
-  used on input line 3653.
+<images/graphs T = 4/n = 6, M = 1 sine and cosine.pdf, id=4137, 462.52798pt x 3
+46.89601pt>
+File: images/graphs T = 4/n = 6, M = 1 sine and cosine.pdf Graphic file (type p
+df)
+<use images/graphs T = 4/n = 6, M = 1 sine and cosine.pdf>
+Package pdftex.def Info: images/graphs T = 4/n = 6, M = 1 sine and cosine.pdf  
+used on input line 3652.
 (pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
 [81]
-<images/graphics T = 4/n = 6, M = 10 sine and cosine.pdf, id=4141, 462.52798pt 
+<images/graphs T = 4/n = 6, M = 10 sine and cosine.pdf, id=4141, 462.52798pt x 
+346.89601pt>
+File: images/graphs T = 4/n = 6, M = 10 sine and cosine.pdf Graphic file (type 
+pdf)
+<use images/graphs T = 4/n = 6, M = 10 sine and cosine.pdf>
+Package pdftex.def Info: images/graphs T = 4/n = 6, M = 10 sine and cosine.pdf 
+ used on input line 3656.
+(pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
+<images/graphs T = 4/n = 6, M = 100 sine and cosine.pdf, id=4142, 462.52798pt x
+ 346.89601pt>
+File: images/graphs T = 4/n = 6, M = 100 sine and cosine.pdf Graphic file (type
+ pdf)
+<use images/graphs T = 4/n = 6, M = 100 sine and cosine.pdf>
+Package pdftex.def Info: images/graphs T = 4/n = 6, M = 100 sine and cosine.pdf
+  used on input line 3660.
+(pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
+ [82 <./images/graphs T = 4/n = 6, M = 1 sine and cosine.pdf>]
+<images/graphs T = 4/n = 6, M = 1000 sine and cosine.pdf, id=4197, 462.52798pt 
 x 346.89601pt>
-File: images/graphics T = 4/n = 6, M = 10 sine and cosine.pdf Graphic file (typ
+File: images/graphs T = 4/n = 6, M = 1000 sine and cosine.pdf Graphic file (typ
 e pdf)
-<use images/graphics T = 4/n = 6, M = 10 sine and cosine.pdf>
-Package pdftex.def Info: images/graphics T = 4/n = 6, M = 10 sine and cosine.pd
-f  used on input line 3657.
+<use images/graphs T = 4/n = 6, M = 1000 sine and cosine.pdf>
+Package pdftex.def Info: images/graphs T = 4/n = 6, M = 1000 sine and cosine.pd
+f  used on input line 3664.
 (pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
-<images/graphics T = 4/n = 6, M = 100 sine and cosine.pdf, id=4142, 462.52798pt
+<images/graphs T = 4/n = 6, M = 10000 sine and cosine.pdf, id=4198, 462.52798pt
  x 346.89601pt>
-File: images/graphics T = 4/n = 6, M = 100 sine and cosine.pdf Graphic file (ty
+File: images/graphs T = 4/n = 6, M = 10000 sine and cosine.pdf Graphic file (ty
 pe pdf)
-<use images/graphics T = 4/n = 6, M = 100 sine and cosine.pdf>
-Package pdftex.def Info: images/graphics T = 4/n = 6, M = 100 sine and cosine.p
-df  used on input line 3661.
+<use images/graphs T = 4/n = 6, M = 10000 sine and cosine.pdf>
+Package pdftex.def Info: images/graphs T = 4/n = 6, M = 10000 sine and cosine.p
+df  used on input line 3668.
 (pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
- [82 <./images/graphics T = 4/n = 6, M = 1 sine and cosine.pdf>]
-<images/graphics T = 4/n = 6, M = 1000 sine and cosine.pdf, id=4197, 462.52798p
-t x 346.89601pt>
-File: images/graphics T = 4/n = 6, M = 1000 sine and cosine.pdf Graphic file (t
-ype pdf)
-<use images/graphics T = 4/n = 6, M = 1000 sine and cosine.pdf>
-Package pdftex.def Info: images/graphics T = 4/n = 6, M = 1000 sine and cosine.
-pdf  used on input line 3665.
-(pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
-<images/graphics T = 4/n = 6, M = 10000 sine and cosine.pdf, id=4198, 462.52798
-pt x 346.89601pt>
-File: images/graphics T = 4/n = 6, M = 10000 sine and cosine.pdf Graphic file (
-type pdf)
-<use images/graphics T = 4/n = 6, M = 10000 sine and cosine.pdf>
-Package pdftex.def Info: images/graphics T = 4/n = 6, M = 10000 sine and cosine
-.pdf  used on input line 3669.
-(pdftex.def)             Requested size: 323.9978pt x 243.0108pt.
- [83 <./images/graphics T = 4/n = 6, M = 10 sine and cosine.pdf> <./images/grap
-hics T = 4/n = 6, M = 100 sine and cosine.pdf>] [84 <./images/graphics T = 4/n 
-= 6, M = 1000 sine and cosine.pdf> <./images/graphics T = 4/n = 6, M = 10000 si
-ne and cosine.pdf>]
-
-LaTeX Warning: Empty bibliography on input line 3867.
-
+ [83 <./images/graphs T = 4/n = 6, M = 10 sine and cosine.pdf> <./images/graphs
+ T = 4/n = 6, M = 100 sine and cosine.pdf>] [84 <./images/graphs T = 4/n = 6, M
+ = 1000 sine and cosine.pdf> <./images/graphs T = 4/n = 6, M = 10000 sine and c
+osine.pdf>]
 [85] (tables_KSS.aux)
 
 LaTeX Warning: There were undefined references.
@@ -1755,13 +1751,13 @@ Package logreq Info: Writing requests to 'tables_KSS.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 11765 strings out of 481178
- 231781 string characters out of 2901986
- 871882 words of memory out of 3000000
- 27222 multiletter control sequences out of 15000+200000
- 542870 words of font info for 57 fonts, out of 3000000 for 9000
+ 11577 strings out of 481178
+ 227352 string characters out of 2901986
+ 871832 words of memory out of 3000000
+ 27034 multiletter control sequences out of 15000+200000
+ 542563 words of font info for 56 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,11n,39p,1457b,1310s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 40i,11n,37p,1392b,1310s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Andrea\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600
 \tcrm1095.pk><C:/Users/Andrea/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
 lic/amsfonts/cm/cmbx10.pfb><C:/Users/Andrea/AppData/Local/Programs/MiKTeX 2.9/f
@@ -1778,7 +1774,7 @@ ocal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/An
 drea/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb
 ><C:/Users/Andrea/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
 /cm/cmti10.pfb>
-Output written on tables_KSS.pdf (85 pages, 1751593 bytes).
+Output written on tables_KSS.pdf (85 pages, 1747274 bytes).
 PDF statistics:
  4461 PDF objects out of 5155 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
