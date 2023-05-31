@@ -81,25 +81,15 @@ M1 = 10**7
 
 f = factorial(K)
 
-start = time.process_time()   # the stopwatch starts
-X, gamma = monte_carlo(sigma, T, N1, M1, K, f)
-end = time.process_time()   # the stopwatch stops
+# start = time.process_time()   # the stopwatch starts
+# X, gamma = monte_carlo(sigma, T, N1, M1, K, f)
+# end = time.process_time()   # the stopwatch stops
 
-print("Euler - Monte Carlo execution time: ", end - start)
-print(" ")
+# print("Euler - Monte Carlo execution time: ", end - start)
+# print(" ")
 
-for i in range(K+1):
 
-    fig = plt.figure() 
-    plt.title("Monte Carlo") 
-    plt.xlabel("Time steps") 
-    plt.ylabel("Evolution of gamma"+str(i)) 
-    plt.plot(gamma[i])
-    
-    
-    plt.show()
-
-np.save('gammaMC.npy', gamma)
+# np.save('gammaMC.npy', gamma)
 
 g = np.load('gammaMC.npy')
 
