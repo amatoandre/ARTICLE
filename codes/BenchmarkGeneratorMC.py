@@ -77,7 +77,7 @@ T = 1
 N1 = 100
 K = 20
 sigma = 0.1
-M1 = 20**7
+M1 = 10**7
 
 f = factorial(K)
 
@@ -102,4 +102,15 @@ for i in range(K+1):
 np.save('gammaMC.npy', gamma)
 
 g = np.load('gammaMC.npy')
-print(g == gamma)
+
+
+for i in range(K+1):
+
+    fig = plt.figure() 
+    plt.title("Monte Carlo") 
+    plt.xlabel("Time steps") 
+    plt.ylabel("Evolution of gamma"+str(i)) 
+    plt.plot(g[i])
+    
+    
+plt.show()
