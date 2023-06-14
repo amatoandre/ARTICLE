@@ -1,9 +1,9 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Wed May 31 17:07:50 2023
+# # -*- coding: utf-8 -*-
+# """
+# Created on Wed May 31 17:07:50 2023
 
-@author: Andrea
-"""
+# @author: Andrea
+# """
 
 import scipy
 import math
@@ -71,7 +71,7 @@ def monte_carlo(sigma, T, N, M, K, f):
 
 
 
-# variable parameters
+# # variable parameters
 
 T = 1
 N1 = 100
@@ -79,7 +79,7 @@ K = 20
 sigma = 0.1
 M1 = 10**7
 
-f = factorial(K)
+# f = factorial(K)
 
 # start = time.process_time()   # the stopwatch starts
 # X, gamma = monte_carlo(sigma, T, N1, M1, K, f)
@@ -87,6 +87,17 @@ f = factorial(K)
 
 # print("Euler - Monte Carlo execution time: ", end - start)
 # print(" ")
+
+# for i in range(K+1):
+
+#     fig = plt.figure() 
+#     plt.title("Monte Carlo") 
+#     plt.xlabel("Time steps") 
+#     plt.ylabel("Evolution of gamma"+str(i)) 
+#     plt.plot(gamma[i])
+    
+    
+# plt.show()
 
 
 # np.save('gammaMC.npy', gamma)
@@ -104,3 +115,4 @@ for i in range(K+1):
     
     
 plt.show()
+
