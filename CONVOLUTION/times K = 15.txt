@@ -1,4 +1,0 @@
-Number of iterations to achieve convergence with M = 1 :
-
-Execution time with r0=5 and rho=0.8: 229.8796875
-Execution time with r0=5 and rho=0.9: 131.1921875
