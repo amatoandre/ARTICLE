@@ -145,7 +145,7 @@ K = 5
 sigma = 0.3
 n = 3 
 M1 = 10**4
-M = 100
+M = 1000
 h = T / N  
 l = 10
 r0 = 3  
@@ -162,29 +162,30 @@ a_0, g = base(T, N, n, K, f, 'lagrange')
 
 # Euler - Monte Carlo
 
-start = time.process_time()   # the stopwatch starts
-X, Gamma = monte_carlo(sigma, T, N1, M1, K, factorial(K))
-end = time.process_time()   # the stopwatch stops
+# start = time.process_time()   # the stopwatch starts
+# X, Gamma = monte_carlo(sigma, T, N1, M1, K, factorial(K))
+# end = time.process_time()   # the stopwatch stops
 
-print("Euler - Monte Carlo execution time: ", end - start)
-print(" ")
+# print("Euler - Monte Carlo execution time: ", end - start)
+# print(" ")
 
 # np.save('BenchmarkM10^7sigma03K5.npy', Gamma)
 
 gamma = np.load('BenchmarkM10^7sigma03K5.npy')
 
-print("Euler - Monte Carlo error: ", (LA.norm(gamma - Gamma) / LA.norm(gamma)) ) 
-print(" ")
+# print("Euler - Monte Carlo error: ", (LA.norm(gamma - Gamma) / LA.norm(gamma)) ) 
+# print(" ")
 
-for i in range(K+1):
-    fig = plt.figure() 
-    plt.title("Comparison between MC and MC with M = "+str(M1)) 
-    plt.xlabel("Time steps") 
-    plt.ylabel("Evolution of gamma"+str(i)) 
-    # plt.ylim(0.4, 0.6)   # without we have that the graph is very zoomed in
-    plt.plot(Gamma[i,:], label='Gamma'+str(i))
-    plt.plot(gamma[i,:], label='gamma'+str(i))
-    plt.legend()
+# for i in range(K+1):
+#     fig = plt.figure() 
+#     plt.title("Comparison between MC and MC with M = "+str(M1)) 
+#     plt.xlabel("Time steps") 
+#     plt.ylabel("Evolution of gamma"+str(i)) 
+#     # plt.ylim(0.4, 0.6)   # without we have that the graph is very zoomed in
+#     plt.plot(Gamma[i,:], label='Gamma'+str(i))
+#     plt.plot(gamma[i,:], label='gamma'+str(i))
+#     plt.legend()
+#     plt.savefig("gamma"+str(i)+" MC = "+str(M1)+".pdf")
     
 start = time.process_time()
 a, m = stochastic_gradient_descent(a_0, n, r0, rho, sigma, N, M, K, eps, h, g, gamma, alpha, alpha1, H, phi1, l) 
@@ -204,4 +205,4 @@ for i in range(6):
     plt.plot(np.dot(a[i,:], g), label='(La)(t)')
     plt.plot(gamma[i,:], label='gamma'+str(i))
     plt.legend()
-    plt.savefig("gamma"+str(i)+" SGD.pdf")
+    plt.savefig("gamma"+str(i)+" SGD "+str(M)+".pdf")
