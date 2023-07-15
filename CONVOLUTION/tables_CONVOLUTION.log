@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.8.31)  21 JUN 2023 17:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.8.31)  27 JUN 2023 12:33
 entering extended mode
 **./tables_CONVOLUTION.tex
 (tables_CONVOLUTION.tex
@@ -657,17 +657,22 @@ Overfull \hbox (8.65707pt too wide) detected at line 115
  [] < \OT1/cmr/m/n/10.95 5%\OML/cmm/m/it/10.95 :
  []
 
-[4] [5] [6] [7] [8] [9] [10] [11] [12] [13] [14] (tables_CONVOLUTION.aux)
+[4] [5] [6] [7] [8] [9] [10] [11] [12] [13] [14]
+Overfull \hbox (5.771pt too wide) in paragraph at lines 759--769
+ [][] 
+ []
+
+[15] (tables_CONVOLUTION.aux)
 Package logreq Info: Writing requests to 'tables_CONVOLUTION.run.xml'.
 \openout1 = `tables_CONVOLUTION.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 11152 strings out of 481178
- 201188 string characters out of 2901986
+ 11163 strings out of 481178
+ 201333 string characters out of 2901986
  866853 words of memory out of 3000000
- 26633 multiletter control sequences out of 15000+200000
- 542563 words of font info for 56 fonts, out of 3000000 for 9000
+ 26643 multiletter control sequences out of 15000+200000
+ 544864 words of font info for 66 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  40i,12n,37p,1200b,1310s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Andrea\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600
@@ -676,20 +681,22 @@ lic/amsfonts/cm/cmbx10.pfb><C:/Users/Andrea/AppData/Local/Programs/MiKTeX 2.9/f
 onts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Andrea/AppData/Local/Program
 s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Andrea/AppData
 /Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/
-Andrea/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.p
-fb><C:/Users/Andrea/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfon
-ts/cm/cmmi8.pfb><C:/Users/Andrea/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
-public/amsfonts/cm/cmr10.pfb><C:/Users/Andrea/AppData/Local/Programs/MiKTeX 2.9
-/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Andrea/AppData/Local/Program
-s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Andrea/AppData/L
-ocal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/An
-drea/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb
+Andrea/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.
+pfb><C:/Users/Andrea/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfo
+nts/cm/cmmi6.pfb><C:/Users/Andrea/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
+/public/amsfonts/cm/cmmi8.pfb><C:/Users/Andrea/AppData/Local/Programs/MiKTeX 2.
+9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Andrea/AppData/Local/Progr
+ams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Andrea/AppDat
+a/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/A
+ndrea/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb
 ><C:/Users/Andrea/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmti10.pfb><C:/Users/Andrea/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/p
-ublic/amsfonts/symbols/msbm10.pfb>
-Output written on tables_CONVOLUTION.pdf (14 pages, 192269 bytes).
+/cm/cmsy10.pfb><C:/Users/Andrea/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmsy8.pfb><C:/Users/Andrea/AppData/Local/Programs/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/Andrea/AppData/Local/Progra
+ms/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on tables_CONVOLUTION.pdf (15 pages, 210249 bytes).
 PDF statistics:
- 105 PDF objects out of 1000 (max. 8388607)
+ 116 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

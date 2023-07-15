@@ -1,9 +1,9 @@
-# # -*- coding: utf-8 -*-
-# """
-# Created on Wed May 31 17:07:50 2023
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Jul 10 17:18:20 2023
 
-# @author: Andrea
-# """
+@author: Andrea
+"""
 
 import scipy
 import math
@@ -47,72 +47,41 @@ def alpha1(K, M, x, f):
 def H(K, x, f):
     const = ( (2**K)**(-(1/2)) ) * ( f[K]**(-(1/2)) ) * ( (math.pi)**(-(1/4)) ) 
     if K == 1:
-            return [( math.pi )**(-(1/4)) * np.ones((np.shape(x))), const * x]
+            return [( math.pi )**(-(1/4)) * np.ones((np.shape(x))), const * 2 * x]
     return H(K-1, x, f)+[const * (scipy.special.hermite(K, monic=False)(x))]
+
+        
+def fun_alpha(K, f):
+    return lambda x : [math.pi**(1/4) * (1/2)**(i/2) * f[i]**(-1/2) * x**i * np.exp(-(x**2)/4) for i in range(K+1)] 
+
+def fun_alpha1(K, f): 
+    return lambda x : [-math.pi**(1/4) * (1/2)**(i/2+1) * f[i]**(-1/2) * x**(i-1) * (x**2 - 2*i) * np.exp(-(x**2)/4) for i in range(K+1)] 
+
+def fun_H(K, f):
+    return lambda x : [ (2**i)**(-1/2) * f[i]**(-1/2) * (math.pi)**(-1/4) * (scipy.special.hermite(i, monic=False)(x)) for i in range(K+1)]
 
 def phi1(K, x, f):
     const = ( (2**K)**(-(1/2)) ) * ( f[K]**(-(1/2)) ) * ( (math.pi)**(-(1/4)) )
     if K == 1:
             return [-(math.pi)**(-(1/4)) * x, math.sqrt(2)/(math.pi)**(1/4) * (1 - x**2)]
     return phi1(K-1, x, f)+[2 * K * const * (scipy.special.hermite(K-1, monic=False)(x)) - const * x * (scipy.special.hermite(K, monic=False)(x))]
-    
-def monte_carlo(sigma, T, N, M, K, f):
-    h = T / N
-    X = np.random.normal(0, 1, M)
-    gamma = np.zeros((K+1, N+1))
-    gamma[:,0] = mean( (np.array(H(K, X, f)) * np.exp(-((X ** 2)/2))), axis=1 )
-    
-    for i in range(N):
-        W = np.random.normal(0, 1, M) 
-        X = X + ( np.dot(gamma[:,i], alpha(K, M, X, f)) ) * h + sigma * math.sqrt(h) * W
-        gamma[:,i+1] = mean( (np.array(H(K, X, f)) * np.exp(-((X ** 2)/2))), axis=1 )
-    
-    return X, gamma 
+
+def fun_phi1(K, f):
+    return lambda x : [-(math.pi)**(-(1/4)) * x, math.sqrt(2)/(math.pi)**(1/4) * (1 - x**2)] + \
+        [(2**i)**(-1/2) * f[i]**(-1/2) * (math.pi)**(-1/4) * ( (2 * i * scipy.special.hermite(i-1, monic=False)(x)) - \
+                                                              x * (scipy.special.hermite(i, monic=False)(x)) ) for i in range(2,K+1)]
+
+n = 3
+K = 3
+M = 1 # 10, 100, 1000, 10000
+X = np.random.normal(0, 1, M)
 
 
+f = factorial(K)
+abc = fun_H(K,f)
 
-# # variable parameters
+print(np.array(abc(X)) == H(K, X, f))
+print(np.array(abc(X))[1] - H(K, X, f)[1])
+print(H(K, X, f))
 
-T = 1
-N1 = 100
-K = 20
-sigma = 0.1
-M1 = 10**7
-
-# f = factorial(K)
-
-# start = time.process_time()   # the stopwatch starts
-# X, gamma = monte_carlo(sigma, T, N1, M1, K, f)
-# end = time.process_time()   # the stopwatch stops
-
-# print("Euler - Monte Carlo execution time: ", end - start)
-# print(" ")
-
-# for i in range(K+1):
-
-#     fig = plt.figure() 
-#     plt.title("Monte Carlo") 
-#     plt.xlabel("Time steps") 
-#     plt.ylabel("Evolution of gamma"+str(i)) 
-#     plt.plot(gamma[i])
-    
-    
-# plt.show()
-
-
-# np.save('gammaMC.npy', gamma)
-
-g = np.load('gammaMC.npy')
-
-
-for i in range(K+1):
-
-    fig = plt.figure() 
-    plt.title("Monte Carlo") 
-    plt.xlabel("Time steps") 
-    plt.ylabel("Evolution of gamma"+str(i)) 
-    plt.plot(g[i])
-    
-    
-plt.show()
-
+print(scipy.special.hermite(1, monic=False)(1))

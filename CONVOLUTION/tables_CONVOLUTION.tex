@@ -136,7 +136,9 @@ System Type 64-bit operating system, x64-based processor
 \[
 \]
 \newpage
-\section{T = 1 and n = 3}
+\section{T = 1, n = 3 and $\epsilon = 5\%$}
+Bencmark: Euler - Monte Carlo execution time:  3009.03125
+MC with $10^6$ particles: execution time 347.46875; error:  0.0018321418319757708
 \section*{K = 5}
 \begin{table}[H]
 \centering
@@ -732,7 +734,40 @@ $\rho = 0.9$ & 5 & 11 & 6.3 & 13 & 17 & 14.7 \\
 \end{tabular}
 \caption{Number of iterations to achieve convergence with $M = 1000$}
 \end{table}
-
+\newpage
+\section{T = 1, n = 3 and $\epsilon = 1\%$}
+\section*{K = 15}
+\begin{table}[H]
+\centering
+\addtolength{\leftskip}{-1.5cm}
+\addtolength{\rightskip}{-1.5cm}
+\begin{tabular}{|c|llll|}
+\hline
+$ $ & $r_0 = 2$ & $r_0 = 3$ & $r_0 = 4$ & $r_0 = 5$ \\
+\hline
+$\rho = 0.9$ & 166.81 & 229.46 & 223.73 & 270.90\\
+$\rho = 0.95$ & 188.42 & 177.45 & 203.26 & 228.31\\
+$\rho = 0.99$ & 222.42 & 160.88 & 257.22 & 225.87\\
+\hline
+\end{tabular}
+\caption{Average execution times (in seconds $s$) with $M = 100$}
+\end{table}
+\begin{table}[H]
+\centering
+\addtolength{\leftskip}{-3.7cm}
+\addtolength{\rightskip}{-3.7cm}
+\begin{tabular}{|c|llllllllllll|}
+\hline
+$ $ & $r_0 = 2$ & $r_0 = 2$ & $r_0 = 2$ & $r_0 = 3$ & $r_0 = 3$ & $r_0 = 3$ & $r_0 = 4$ & $r_0 = 4$ & $r_0 = 4$ & $r_0 = 5$ & $r_0 = 5$ & $r_0 = 5$ \\
+$ $ & min & max & average & min & max & average & min & max & average & min & max & average \\
+\hline
+$\rho = 0.9$ & 140 & 850 & 405 & 210 & 820 & 482 & 320 & 750 & 517 & 440 &1170 & 645 \\
+$\rho = 0.95$ & 170 & 1040 & 457 & 150 & 810 & 433 & 280 & 780 & 484 & 210 & 840 & 508   \\
+$\rho = 0.99$ & 240 & 1230 & 540 & 260 & 760 & 391 & 240 & 1220 & 601 & 200 & 850 & 521\\
+\hline
+\end{tabular}
+\caption{Number of iterations to achieve convergence with $M = 100$}
+\end{table}
 
 
 
